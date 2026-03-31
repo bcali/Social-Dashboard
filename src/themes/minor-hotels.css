@@ -1,0 +1,122 @@
+/* Minor Hotels — Warm white base, navy text, brand palette */
+
+/* ── Font Declarations ── */
+
+@font-face {
+  font-family: "Manuka";
+  src: url("../fonts/Manuka-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amorfatti";
+  src: url("../fonts/Amorfatti.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 200 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Newsreader";
+  src: url("../fonts/Newsreader-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Newsreader";
+  src: url("../fonts/Newsreader-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 200 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ── Theme Variables ── */
+
+:root {
+  /* ── Backgrounds ── */
+  --bg-primary: #fbf6f0;
+  --bg-secondary: #f5efe5;
+  --bg-card: #ffffff;
+  --bg-elevated: #f0ead8;
+  --bg-hover: #e6dfce;
+
+  /* ── Borders ── */
+  --border: #e2ddd0;
+  --border-subtle: #ede8dc;
+
+  /* ── Text ── */
+  --text-primary: #13213c;
+  --text-secondary: #4a5568;
+  --text-muted: #8896a6;
+
+  /* ── Semantic Colors ── */
+  --color-primary: #0d4877;
+  --color-primary-dim: rgba(13, 72, 119, 0.1);
+  --color-primary-glow: rgba(13, 72, 119, 0.2);
+  --color-secondary: #90cef1;
+  --color-secondary-dim: rgba(144, 206, 241, 0.15);
+  --color-secondary-glow: rgba(144, 206, 241, 0.3);
+  --color-success: #0d4877;
+  --color-success-dim: rgba(13, 72, 119, 0.1);
+  --color-success-glow: rgba(13, 72, 119, 0.2);
+  --color-warning: #b0a078;
+  --color-warning-dim: rgba(176, 160, 120, 0.12);
+  --color-warning-glow: rgba(176, 160, 120, 0.25);
+  --color-danger: #c0392b;
+  --color-danger-dim: rgba(192, 57, 43, 0.1);
+  --color-danger-glow: rgba(192, 57, 43, 0.2);
+
+  /* ── Surfaces (semi-transparent tints) ── */
+  --surface-success: rgba(13, 72, 119, 0.08);
+  --surface-danger: rgba(192, 57, 43, 0.08);
+  --surface-warning: rgba(176, 160, 120, 0.1);
+  --surface-info: rgba(144, 206, 241, 0.12);
+
+  /* ── Grid (disabled for light theme) ── */
+  --color-grid: transparent;
+  --color-grid-line: transparent;
+
+  /* ── Layout ── */
+  --radius: 10px;
+  --radius-sm: 6px;
+
+  /* ── Typography ── */
+  --font-heading: "Manuka", "Plus Jakarta Sans", sans-serif;
+  --font-script: "Amorfatti", cursive;
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-body: "Newsreader", "Georgia", serif;
+  --font-mono: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+  font-family: var(--font-sans);
+
+  /* ── Brand Aliases (Minor Hotels specific) ── */
+  --brand-navy: #13213c;
+  --brand-dark-blue: #0d4877;
+  --brand-sky: #90cef1;
+  --brand-sand: #e6dfce;
+  --brand-gold: #b0a078;
+  --brand-yellow: #f3d958;
+  --brand-white: #fbf6f0;
+  --brand-danger: #c0392b;
+
+  color-scheme: light;
+}

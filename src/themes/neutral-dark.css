@@ -1,0 +1,51 @@
+/* Neutral Dark — Muted slate/emerald, no neon */
+:root {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #1e293b;
+  --bg-elevated: #334155;
+  --bg-hover: #475569;
+
+  --border: #334155;
+  --border-subtle: #1e293b;
+
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  --color-primary: #38bdf8;
+  --color-primary-dim: rgba(56, 189, 248, 0.15);
+  --color-primary-glow: rgba(56, 189, 248, 0.3);
+  --color-secondary: #a78bfa;
+  --color-secondary-dim: rgba(167, 139, 250, 0.15);
+  --color-secondary-glow: rgba(167, 139, 250, 0.3);
+  --color-success: #34d399;
+  --color-success-dim: rgba(52, 211, 153, 0.15);
+  --color-success-glow: rgba(52, 211, 153, 0.3);
+  --color-warning: #fbbf24;
+  --color-warning-dim: rgba(251, 191, 36, 0.15);
+  --color-warning-glow: rgba(251, 191, 36, 0.3);
+  --color-danger: #f87171;
+  --color-danger-dim: rgba(248, 113, 113, 0.15);
+  --color-danger-glow: rgba(248, 113, 113, 0.3);
+
+  --surface-success: rgba(52, 211, 153, 0.1);
+  --surface-danger: rgba(248, 113, 113, 0.1);
+  --surface-warning: rgba(251, 191, 36, 0.1);
+  --surface-info: rgba(56, 189, 248, 0.1);
+
+  --color-grid: rgba(56, 189, 248, 0.02);
+  --color-grid-line: rgba(56, 189, 248, 0.04);
+
+  --radius: 12px;
+  --radius-sm: 8px;
+
+  --font-heading: Inter, system-ui, sans-serif;
+  --font-script: Inter, system-ui, sans-serif;
+  --font-sans: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-body: Inter, system-ui, sans-serif;
+  --font-mono: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+  font-family: var(--font-sans);
+
+  color-scheme: dark;
+}

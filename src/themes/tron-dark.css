@@ -1,0 +1,51 @@
+/* Tron Legacy — Neon cyan/orange on deep black */
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --bg-card: #1a1a24;
+  --bg-elevated: #22222e;
+  --bg-hover: #2a2a36;
+
+  --border: #2a2a3a;
+  --border-subtle: #1e1e2a;
+
+  --text-primary: #f0f0f5;
+  --text-secondary: #8888a0;
+  --text-muted: #5a5a72;
+
+  --color-primary: #00f0ff;
+  --color-primary-dim: rgba(0, 240, 255, 0.15);
+  --color-primary-glow: rgba(0, 240, 255, 0.4);
+  --color-secondary: #ff6600;
+  --color-secondary-dim: rgba(255, 102, 0, 0.15);
+  --color-secondary-glow: rgba(255, 102, 0, 0.4);
+  --color-success: #00d4aa;
+  --color-success-dim: rgba(0, 212, 170, 0.15);
+  --color-success-glow: rgba(0, 212, 170, 0.4);
+  --color-warning: #ffd43b;
+  --color-warning-dim: rgba(255, 212, 59, 0.15);
+  --color-warning-glow: rgba(255, 212, 59, 0.4);
+  --color-danger: #ff4757;
+  --color-danger-dim: rgba(255, 71, 87, 0.15);
+  --color-danger-glow: rgba(255, 71, 87, 0.4);
+
+  --surface-success: rgba(0, 212, 170, 0.12);
+  --surface-danger: rgba(255, 71, 87, 0.12);
+  --surface-warning: rgba(255, 212, 59, 0.12);
+  --surface-info: rgba(74, 158, 255, 0.12);
+
+  --color-grid: rgba(0, 240, 255, 0.03);
+  --color-grid-line: rgba(0, 240, 255, 0.06);
+
+  --radius: 12px;
+  --radius-sm: 8px;
+
+  --font-heading: Inter, system-ui, sans-serif;
+  --font-script: Inter, system-ui, sans-serif;
+  --font-sans: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-body: Inter, system-ui, sans-serif;
+  --font-mono: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+  font-family: var(--font-sans);
+
+  color-scheme: dark;
+}

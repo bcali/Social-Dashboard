@@ -1,0 +1,19 @@
+{
+  "targets": [
+    { "key": "conversion_rate", "name": "Conversion Rate", "unit": "%", "direction": "above", "baseline": 2.1, "floor": 2.0, "target": 3.5 },
+    { "key": "revenue", "name": "Revenue", "unit": "$", "direction": "above", "baseline": 32000, "floor": 30000, "target": 50000 },
+    { "key": "response_time_ms", "name": "Avg Response Time", "unit": "ms", "direction": "below", "baseline": 420, "floor": 500, "target": 200 },
+    { "key": "customer_satisfaction", "name": "CSAT Score", "unit": "%", "direction": "above", "baseline": 78, "floor": 80, "target": 90 },
+    { "key": "active_users", "name": "Active Users", "unit": "", "direction": "above", "baseline": 5200, "floor": 5000, "target": 10000 }
+  ],
+  "history": [
+    { "period": "W01", "date": "2026-01-05", "metrics": { "conversion_rate": 2.1, "revenue": 32000, "response_time_ms": 420, "customer_satisfaction": 78, "active_users": 5200 } },
+    { "period": "W02", "date": "2026-01-12", "metrics": { "conversion_rate": 2.3, "revenue": 34500, "response_time_ms": 395, "customer_satisfaction": 79, "active_users": 5600 } },
+    { "period": "W03", "date": "2026-01-19", "metrics": { "conversion_rate": 2.5, "revenue": 36200, "response_time_ms": 380, "customer_satisfaction": 80, "active_users": 6100 } },
+    { "period": "W04", "date": "2026-01-26", "metrics": { "conversion_rate": 2.4, "revenue": 35800, "response_time_ms": 390, "customer_satisfaction": 81, "active_users": 6400 } },
+    { "period": "W05", "date": "2026-02-02", "metrics": { "conversion_rate": 2.8, "revenue": 39100, "response_time_ms": 350, "customer_satisfaction": 82, "active_users": 7000 } },
+    { "period": "W06", "date": "2026-02-09", "metrics": { "conversion_rate": 3.0, "revenue": 42300, "response_time_ms": 320, "customer_satisfaction": 83, "active_users": 7500 } },
+    { "period": "W07", "date": "2026-02-16", "metrics": { "conversion_rate": 3.1, "revenue": 44800, "response_time_ms": 290, "customer_satisfaction": 85, "active_users": 8200 } },
+    { "period": "W08", "date": "2026-02-23", "metrics": { "conversion_rate": 3.4, "revenue": 47500, "response_time_ms": 260, "customer_satisfaction": 86, "active_users": 8900 } }
+  ]
+}
