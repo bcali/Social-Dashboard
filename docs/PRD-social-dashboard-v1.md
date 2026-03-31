@@ -61,7 +61,8 @@ Build a single-screen dashboard that:
 ## 5. Data Source: Sprout Social API
 
 **Base URL:** `https://api.sproutsocial.com/v1/`  
-**Auth:** Bearer token (per-customer profile). Tokens provided by Debakti.
+**Auth:** Bearer token (org-wide). Tokens provided by Debakti.  
+**Customer scope:** Single `customer_id` for the entire org. One Worker instance covers all brands and regions.
 
 ### Key Endpoints
 
@@ -87,19 +88,35 @@ POST /v1/{customer_id}/analytics/post
 | Video Views | `video_views` |
 | Posts Published | `messages_sent` |
 
-### Property Mapping
+> **Locked:** Engagement Rate is always calculated by impressions (`engagement_rate_by_impressions_percentage`), not by reach. This must match the manual calculation method used by the team for UAT to be valid.
 
-Each Sprout profile maps to one property + one channel. The hotel directory (to be shared by Debakti) is the source of truth for:
+### Channel Aggregation
+
+All metrics are raw-summed across FB + IG + TikTok per property. No normalization by channel count in V1. If a property has 2 channels connected and another has 3, that discrepancy shows up in the data — it is not corrected. This will be revisited in Phase 2 if it distorts rankings materially.
+
+**Implication for dev:** When fetching profile-level data, group by `hotel_id` (from `hotels.json` mapping), sum all `profile_id` rows belonging to that hotel, regardless of channel.
+
+### Property Mapping — ⚠️ BLOCKER
+
+Each Sprout profile maps to one property + one channel. The `hotels.json` mapping file is the source of truth for:
 
 - `profile_id` → `hotel_name`
 - `hotel_name` → `region` (AMEA / MEA / Europe / Americas / etc.)
 - `hotel_name` → `brand` (AN / AV / NH / Other)
 
-This mapping lives in `data/hotels.json` (see Section 8).
+**The hotel directory from Debakti has not been received yet.** It is unknown whether it already contains Sprout `profile_id` values. 
+
+**Dev strategy before the directory arrives:**
+1. Hit `GET /v1/{customer_id}/analytics/profiles` with the live token
+2. Dump the full profile list to `data/sprout-profiles-raw.json`
+3. Manually map profile names → hotel names → region/brand in `data/hotels.json`
+4. This manual mapping becomes the permanent source of truth; update it as new properties are added to Sprout
+
+Do not block dev start on receiving the directory. Start with the raw Sprout profile list and build the mapping incrementally.
 
 ### API Proxy
 
-All Sprout API calls route through the existing Cloudflare Worker at `workers/` to avoid CORS and keep the token server-side. The worker handles:
+All Sprout API calls route through `workers/sprout-proxy.ts` to avoid CORS and keep the token server-side. The worker handles:
 
 - Bearer token injection
 - Response caching (TTL: 1 hour for analytics, 24 hours for profile list)
@@ -138,9 +155,11 @@ Five metric cards in a row using the existing `KpiCard` component:
 |---|---|---|
 | Impressions | Sum across selected scope | `formatCompact()` (e.g. 4.2M) |
 | Engagements | Sum across selected scope | `formatCompact()` |
-| Engagement Rate | Avg across selected scope | `formatPercent()` |
+| Engagement Rate | Weighted avg by impressions across scope | `formatPercent()` |
 | Video Views | Sum across selected scope | `formatCompact()` |
 | Follower Growth | Net sum across selected scope | `formatCompact()` with +/- |
+
+> **Note on Engagement Rate aggregation:** Do NOT simple-average engagement rates across properties. Calculate as `total_engagements ÷ total_impressions` across all properties in scope. This matches how Sprout calculates it at group level and will pass UAT validation.
 
 Each card shows:
 - Current period value
@@ -187,11 +206,26 @@ Columns:
 
 **Behavior:**
 - Default: Top 10 by Engagement Rate, all regions
-- Toggle sort metric via column header click (standard DataTable behavior)
+- Toggle sort metric via column header click
 - "Show all" expands table
-- At Global level: ranks all properties. At Region level: ranks within region only
-- **Baseline row:** Pinned row showing average of top 5 performers (auto-calculated) — highlighted differently with `ui-glow-success`. This is the benchmark line.
+- At Global level: ranks all properties. At Region level: ranks within region only.
+- **Baseline row (always global top 4):** Pinned row at top showing the average of the top 4 globally-ranked properties by engagement rate — regardless of what region/brand filter is active. Highlighted with `ui-glow-success`. Label: "Global Top 4 Avg". This is the benchmark every property is measured against.
 - Search/filter by hotel name inline
+
+**Baseline calculation:**
+```
+globalTop4 = allProperties
+  .sort(desc by engagement_rate_by_impressions)
+  .slice(0, 4)
+
+baseline = {
+  engagement_rate: sum(globalTop4.engagements) / sum(globalTop4.impressions),
+  impressions: avg(globalTop4.impressions),
+  follower_growth: avg(globalTop4.net_follower_growth)
+}
+```
+
+Baseline is always computed on the same date range as the current filter. It does not change when region/brand filter changes.
 
 **Validation note:** This ranking output must be manually spot-checked by Dena against hand-calculated results during UAT. Flag discrepancies in `docs/validation-log.md`.
 
@@ -226,9 +260,7 @@ Columns:
 
 **Question answered:** Are we doing enough, consistently?
 
-**Component:** Summary stats grid (not a chart — diagnostic only, not used for ranking)
-
-Metrics:
+**Component:** Summary stats grid (diagnostic only — not used for ranking)
 
 | Label | Value |
 |---|---|
@@ -244,11 +276,11 @@ Display as a 2×3 card grid using `Card` + `Value` components.
 
 ### Footer — AI Insight Summary
 
-**Component:** Collapsible panel (Accordion)
+**Component:** Collapsible panel (`Accordion`)
 
-3 automated insight bullets generated by calling the Claude API (`claude-sonnet-4-20250514`) with the current period's aggregated metrics as context.
+2–3 automated insight bullets generated via Claude API (`claude-sonnet-4-20250514`) using the current period's aggregated metrics as context.
 
-**Prompt structure (passed to Claude API):**
+**Prompt structure:**
 
 ```
 You are a social media analyst for a luxury hotel chain with 580+ properties.
@@ -259,19 +291,21 @@ changed, why it likely changed, and one actionable recommendation.
 Data: {current_period_summary_json}
 ```
 
-Use the existing Anthropic API proxy pattern in `workers/` (same pattern as `gamma-proxy`). Cache insights per filter state (hash of date+region+brand = cache key, TTL 4 hours).
+Routed through `workers/anthropic-proxy.ts` (mirror existing proxy pattern). Cache per filter state hash (date + region + brand → SHA-256 key), TTL 4 hours.
 
 ---
 
-## 7. Gamma Export
+## 7. Gamma Export — ⚠️ BLOCKER
 
 **Trigger:** "Export to Gamma" button in header
 
 **Behavior:**
-1. Collects current state: KPI scorecards, top 5 ranking table, trend direction, insight bullets
-2. Calls `workers/gamma-proxy` with structured slide content
-3. Gamma generates a deck: cover slide, KPI slide, rankings slide, top content slide, insights slide
-4. Returns Gamma URL — opens in new tab
+1. Collect current state: KPI scorecards, top 5 ranking table, trend direction, insight bullets
+2. Call `workers/gamma-proxy` with structured slide content
+3. Gamma generates a 5-slide deck: cover, KPIs, rankings, top content, insights
+4. Return Gamma URL → open in new tab
+
+**Status:** Gamma API key is NOT yet provisioned. Before building the export button, provision the key and add `GAMMA_API_KEY` to Cloudflare secrets. The button can be built and stubbed (disabled + tooltip "Coming soon") until the key is in place — do not block the rest of V1 on this.
 
 Slide count: 5 fixed. No customization in V1.
 
@@ -281,7 +315,7 @@ Slide count: 5 fixed. No customization in V1.
 
 ### `data/hotels.json`
 
-Source: Hotel directory doc from Debakti. Structure:
+Built from Sprout `/profiles` endpoint dump + manual mapping. Schema:
 
 ```json
 [
@@ -299,9 +333,11 @@ Source: Hotel directory doc from Debakti. Structure:
 ]
 ```
 
+> Start by dumping `GET /v1/{customer_id}/analytics/profiles` → save as `data/sprout-profiles-raw.json`. Use that to build `hotels.json` mapping manually.
+
 ### `data/social-targets.json`
 
-Baseline targets for KPI status zones (drives `KpiCard` color):
+Baseline thresholds for `KpiCard` status zones:
 
 ```json
 {
@@ -311,7 +347,7 @@ Baseline targets for KPI status zones (drives `KpiCard` color):
 }
 ```
 
-Set conservative defaults for launch. Adjust after first month of real data.
+Defaults are conservative. Adjust after first real month of data.
 
 ---
 
@@ -321,18 +357,30 @@ Set conservative defaults for launch. Adjust after first month of real data.
 Browser (React)
     ↓
 Cloudflare Worker (/workers/sprout-proxy)
-    ↓  [injects Bearer token, caches response]
+    ↓  [injects Bearer token, 1hr cache]
 Sprout Social API (api.sproutsocial.com/v1)
+
+Browser (React)
+    ↓
+Cloudflare Worker (/workers/anthropic-proxy)
+    ↓  [injects Anthropic API key, 4hr insight cache]
+Anthropic Claude API
+
+Browser (React) [Gamma Export only]
+    ↓
+Cloudflare Worker (/workers/gamma-proxy)  ← KEY NOT YET PROVISIONED
+    ↓
+Gamma API
 ```
 
-New worker: `workers/sprout-proxy.ts`  
-Mirrors pattern of existing `gamma-proxy` and `github-proxy`.
+**New workers needed:** `sprout-proxy.ts`, `anthropic-proxy.ts`  
+**Existing worker to extend:** `gamma-proxy.ts` (once key is provisioned)
 
-**Environment variables needed (Cloudflare secrets):**
+**Cloudflare secrets to add:**
 - `SPROUT_BEARER_TOKEN`
 - `SPROUT_CUSTOMER_ID`
-
-**Do not commit tokens to repo.** Use `.env.example` pattern already in place.
+- `ANTHROPIC_API_KEY`
+- `GAMMA_API_KEY` ← blocked
 
 ---
 
@@ -340,15 +388,15 @@ Mirrors pattern of existing `gamma-proxy` and `github-proxy`.
 
 | Component | Location | Notes |
 |---|---|---|
-| `SocialKpiBar` | `src/components/dashboard/` | Extends `KpiCards` for social metrics |
-| `TrendChart` | `src/components/dashboard/` | Recharts wrapper with toggle + period overlay |
-| `PropertyRankingTable` | `src/components/dashboard/` | Extends `DataTable` with baseline row + rank column |
+| `SocialKpiBar` | `src/components/dashboard/` | 5-card KPI row for social metrics |
+| `TrendChart` | `src/components/dashboard/` | Recharts `LineChart` with metric toggle + period overlay |
+| `PropertyRankingTable` | `src/components/dashboard/` | `DataTable` extended with pinned baseline row + rank column |
 | `TopPostsTable` | `src/components/dashboard/` | Post thumbnail + metrics table |
 | `ActivityGrid` | `src/components/dashboard/` | 2×3 diagnostic stats grid |
-| `InsightSummary` | `src/components/dashboard/` | Accordion wrapping Claude API insight bullets |
-| `useSproutData` | `src/hooks/` | Fetcher hook for Sprout proxy — wraps `useFetchJson` with filter params |
+| `InsightSummary` | `src/components/dashboard/` | `Accordion` wrapping Claude API insight bullets |
+| `useSproutData` | `src/hooks/` | Fetches via `sprout-proxy`; accepts filter params; returns normalized hotel-grouped data |
 
-Reuse existing: `KpiCard`, `FilterBar`, `DataTable`, `Card`, `Badge`, `Value`, `Select`, `DateInput`.
+Reuse existing: `KpiCard`, `FilterBar`, `DataTable`, `Card`, `Badge`, `Value`, `Select`, `DateInput`, `Accordion`.
 
 ---
 
@@ -356,47 +404,65 @@ Reuse existing: `KpiCard`, `FilterBar`, `DataTable`, `Card`, `Badge`, `Value`, `
 
 `src/pages/SocialDashboardPage.tsx`
 
-This is the V1 page. Wire it into `App.tsx` as the default route (replace or alongside `DashboardPage`).
+Wire into `App.tsx` as the default route (replace or alongside `DashboardPage`).
 
 ---
 
-## 12. Validation Checklist (UAT)
+## 12. Build Sequence (Recommended for Claude Code)
 
-Before shipping to the team:
+Build in this order to unblock validation early:
 
-- [ ] Rankings output for a given month matches Dena's manual top-5 calculation
-- [ ] KPI totals for a selected region match Sprout's own "Group Report" export for same date range
-- [ ] Engagement Rate card delta correctly reflects prior period (not prior year)
-- [ ] Filters: switching Region correctly updates all 5 sections simultaneously
-- [ ] Hotel view: scopes all sections to single property
-- [ ] Gamma export generates a valid deck URL and opens correctly
-- [ ] AI insights generate within 5 seconds; fallback message if API timeout
-
----
-
-## 13. Open Questions
-
-Before dev starts, need answers on:
-
-1. **Hotel directory format:** What does Debakti's hotel directory look like? Does it already include Sprout profile IDs, or do we need to map them manually from the Sprout `/profiles` endpoint?
-
-2. **Channel coverage:** Are all 3 channels (FB, IG, TikTok) connected in Sprout for most properties, or is coverage patchy? If TikTok is missing for many hotels, the cross-channel aggregate will be skewed — we may need to normalize by "channels connected."
-
-3. **Sprout customer ID:** Single `customer_id` for the entire org, or one per brand/region? This determines whether one Worker instance covers everything.
-
-4. **Engagement Rate definition:** Sprout offers `engagement_rate_by_impressions_percentage` and `engagement_rate_by_reach_percentage`. Which does the team currently use in manual reports? Must match for validation to work.
-
-5. **Baseline definition for benchmarking:** The wireframe calls for comparing selected properties against "the top 5 performers." Top 5 of what — the current filter scope, or always global top 5? Clarify with Brian before building Section 3.
-
-6. **Gamma credentials:** Does `workers/gamma-proxy` already have a working Gamma API key, or does that need to be provisioned?
+1. `workers/sprout-proxy.ts` — get the data pipeline live first
+2. `data/sprout-profiles-raw.json` + `data/hotels.json` — build the mapping
+3. `useSproutData` hook — normalized data layer
+4. Section 1 (KPI Scorecard) — earliest validation checkpoint
+5. Section 3 (Rankings) — core value prop; validate against Dena's manual calc
+6. Section 2 (Trends) — visualization layer
+7. Section 4 (Content) — post API integration
+8. Section 5 (Activity) — diagnostic; derived from existing data
+9. Footer AI Insights — `workers/anthropic-proxy.ts` + `InsightSummary`
+10. Gamma Export — last; blocked on key provisioning
 
 ---
 
-## 14. Success Metrics — V1
+## 13. Validation Checklist (UAT)
+
+- [ ] Rankings output for a given month matches Dena's manual top-4 global baseline calc
+- [ ] Engagement Rate (%) = `total_engagements ÷ total_impressions` (not simple avg) — verify against Sprout Group Report
+- [ ] KPI totals for a selected region match Sprout's own export for same date range
+- [ ] Delta on KPI cards = current period vs. immediately prior same-length window (not YoY)
+- [ ] Switching Region filter updates all 5 sections; global top 4 baseline does NOT change
+- [ ] Hotel view scopes all sections to single property
+- [ ] Gamma export generates valid URL (once key provisioned)
+- [ ] AI insights render within 5 seconds; fallback "Insights unavailable" if timeout
+
+---
+
+## 14. Resolved Decisions
+
+| # | Question | Decision |
+|---|---|---|
+| 2 | Channel coverage | Raw aggregate across all connected channels (FB+IG+TT). No normalization in V1. |
+| 3 | Sprout customer ID | Single org-wide `customer_id`. One Worker covers everything. |
+| 4 | Engagement Rate definition | `engagement_rate_by_impressions_percentage`. Locked. |
+| 5 | Baseline definition | Always global top **4** — not filtered scope. Pinned row regardless of active region/brand filter. |
+
+---
+
+## 15. Open Blockers
+
+| # | Blocker | Owner | Required Before |
+|---|---|---|---|
+| 1 | Hotel directory / Sprout profile ID mapping | Debakti | `data/hotels.json` build. Workaround: dump raw profile list from API and map manually. **Do not block dev start.** |
+| 6 | Gamma API key provisioning | Brian | Gamma Export button. Stub the button as disabled until resolved. **Does not block V1 core.** |
+
+---
+
+## 16. Success Metrics — V1
 
 | Metric | Target |
 |---|---|
 | Manual reporting hours eliminated | ≥ 4 hrs/week |
-| Ranking output accuracy vs. manual | 100% match on spot-check |
-| Time to generate exec report (Gamma export) | < 2 minutes end-to-end |
-| Team adoption | Social leads using it weekly within 30 days of launch |
+| Ranking accuracy vs. manual | 100% match on Dena spot-check |
+| Exec report generation time | < 2 min end-to-end (Gamma export) |
+| Team adoption | Social leads using weekly within 30 days of launch |
