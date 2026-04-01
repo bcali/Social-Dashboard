@@ -2,17 +2,17 @@ import { useState } from "react";
 import { BarChart3 } from "lucide-react";
 import { Toaster } from "sonner";
 import { Layout, type NavItem } from "./components/layout";
-import { DashboardPage } from "./pages/DashboardPage";
+import { SocialDashboardPage } from "./pages/SocialDashboardPage";
 
-const navItems: NavItem[] = [{ id: "dashboard", icon: BarChart3, label: "Dashboard" }];
+const navItems: NavItem[] = [{ id: "social", icon: BarChart3, label: "Social Performance" }];
 
 export default function App() {
-  const [activeView, setActiveView] = useState("dashboard");
+  const [activeView, setActiveView] = useState("social");
 
   return (
     <>
       <Layout navItems={navItems} activeView={activeView} onNavigate={setActiveView}>
-        {activeView === "dashboard" && <DashboardPage />}
+        {activeView === "social" && <SocialDashboardPage />}
       </Layout>
       <Toaster theme="light" position="bottom-right" />
     </>
