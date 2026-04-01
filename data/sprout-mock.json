@@ -1,0 +1,292 @@
+[
+  {
+    "hotel_id": "minor_001",
+    "name": "Anantara Seminyak Bali Resort",
+    "brand": "AN",
+    "region": "AMEA",
+    "country": "ID",
+    "sprout_profiles": [
+      { "profile_id": "sp_100001", "channel": "facebook" },
+      { "profile_id": "sp_100002", "channel": "instagram" }
+    ],
+    "metrics": {
+      "impressions": 245000,
+      "engagements": 8200,
+      "engagement_rate": 3.35,
+      "net_follower_growth": 620,
+      "video_views": 48000,
+      "messages_sent": 42
+    },
+    "weekly_history": [
+      { "period": "W01", "date": "2026-01-05", "impressions": 28000, "engagements": 920, "net_follower_growth": 75 },
+      { "period": "W02", "date": "2026-01-12", "impressions": 29500, "engagements": 980, "net_follower_growth": 82 },
+      { "period": "W03", "date": "2026-01-19", "impressions": 30200, "engagements": 1010, "net_follower_growth": 78 },
+      { "period": "W04", "date": "2026-01-26", "impressions": 31000, "engagements": 1040, "net_follower_growth": 80 },
+      { "period": "W05", "date": "2026-02-02", "impressions": 30800, "engagements": 1030, "net_follower_growth": 76 },
+      { "period": "W06", "date": "2026-02-09", "impressions": 31500, "engagements": 1060, "net_follower_growth": 82 },
+      { "period": "W07", "date": "2026-02-16", "impressions": 32000, "engagements": 1080, "net_follower_growth": 85 },
+      { "period": "W08", "date": "2026-02-23", "impressions": 32000, "engagements": 1080, "net_follower_growth": 162 }
+    ]
+  },
+  {
+    "hotel_id": "minor_002",
+    "name": "Anantara Siam Bangkok Hotel",
+    "brand": "AN",
+    "region": "AMEA",
+    "country": "TH",
+    "sprout_profiles": [
+      { "profile_id": "sp_100003", "channel": "facebook" },
+      { "profile_id": "sp_100004", "channel": "instagram" }
+    ],
+    "metrics": {
+      "impressions": 312000,
+      "engagements": 14040,
+      "engagement_rate": 4.50,
+      "net_follower_growth": 890,
+      "video_views": 72000,
+      "messages_sent": 56
+    },
+    "weekly_history": [
+      { "period": "W01", "date": "2026-01-05", "impressions": 36000, "engagements": 1580, "net_follower_growth": 98 },
+      { "period": "W02", "date": "2026-01-12", "impressions": 37500, "engagements": 1650, "net_follower_growth": 105 },
+      { "period": "W03", "date": "2026-01-19", "impressions": 38200, "engagements": 1720, "net_follower_growth": 110 },
+      { "period": "W04", "date": "2026-01-26", "impressions": 39000, "engagements": 1780, "net_follower_growth": 112 },
+      { "period": "W05", "date": "2026-02-02", "impressions": 39500, "engagements": 1800, "net_follower_growth": 115 },
+      { "period": "W06", "date": "2026-02-09", "impressions": 40200, "engagements": 1830, "net_follower_growth": 118 },
+      { "period": "W07", "date": "2026-02-16", "impressions": 40800, "engagements": 1840, "net_follower_growth": 116 },
+      { "period": "W08", "date": "2026-02-23", "impressions": 40800, "engagements": 1840, "net_follower_growth": 116 }
+    ]
+  },
+  {
+    "hotel_id": "minor_003",
+    "name": "Avani+ Riverside Bangkok Hotel",
+    "brand": "AV",
+    "region": "AMEA",
+    "country": "TH",
+    "sprout_profiles": [
+      { "profile_id": "sp_100005", "channel": "facebook" },
+      { "profile_id": "sp_100006", "channel": "instagram" }
+    ],
+    "metrics": {
+      "impressions": 178000,
+      "engagements": 4272,
+      "engagement_rate": 2.40,
+      "net_follower_growth": 310,
+      "video_views": 29000,
+      "messages_sent": 38
+    },
+    "weekly_history": [
+      { "period": "W01", "date": "2026-01-05", "impressions": 20500, "engagements": 490, "net_follower_growth": 35 },
+      { "period": "W02", "date": "2026-01-12", "impressions": 21200, "engagements": 510, "net_follower_growth": 38 },
+      { "period": "W03", "date": "2026-01-19", "impressions": 21800, "engagements": 525, "net_follower_growth": 37 },
+      { "period": "W04", "date": "2026-01-26", "impressions": 22000, "engagements": 530, "net_follower_growth": 40 },
+      { "period": "W05", "date": "2026-02-02", "impressions": 22500, "engagements": 540, "net_follower_growth": 39 },
+      { "period": "W06", "date": "2026-02-09", "impressions": 23000, "engagements": 555, "net_follower_growth": 41 },
+      { "period": "W07", "date": "2026-02-16", "impressions": 23500, "engagements": 560, "net_follower_growth": 40 },
+      { "period": "W08", "date": "2026-02-23", "impressions": 23500, "engagements": 562, "net_follower_growth": 40 }
+    ]
+  },
+  {
+    "hotel_id": "minor_004",
+    "name": "NH Collection Barbizon Palace",
+    "brand": "NH",
+    "region": "Europe",
+    "country": "NL",
+    "sprout_profiles": [
+      { "profile_id": "sp_100007", "channel": "facebook" },
+      { "profile_id": "sp_100008", "channel": "instagram" }
+    ],
+    "metrics": {
+      "impressions": 195000,
+      "engagements": 5460,
+      "engagement_rate": 2.80,
+      "net_follower_growth": 420,
+      "video_views": 35000,
+      "messages_sent": 44
+    },
+    "weekly_history": [
+      { "period": "W01", "date": "2026-01-05", "impressions": 23000, "engagements": 640, "net_follower_growth": 48 },
+      { "period": "W02", "date": "2026-01-12", "impressions": 23500, "engagements": 660, "net_follower_growth": 50 },
+      { "period": "W03", "date": "2026-01-19", "impressions": 24000, "engagements": 672, "net_follower_growth": 52 },
+      { "period": "W04", "date": "2026-01-26", "impressions": 24200, "engagements": 680, "net_follower_growth": 53 },
+      { "period": "W05", "date": "2026-02-02", "impressions": 24500, "engagements": 688, "net_follower_growth": 54 },
+      { "period": "W06", "date": "2026-02-09", "impressions": 25000, "engagements": 700, "net_follower_growth": 55 },
+      { "period": "W07", "date": "2026-02-16", "impressions": 25200, "engagements": 710, "net_follower_growth": 54 },
+      { "period": "W08", "date": "2026-02-23", "impressions": 25600, "engagements": 710, "net_follower_growth": 54 }
+    ]
+  },
+  {
+    "hotel_id": "minor_005",
+    "name": "NH Collection Grand Hotel Krasnapolsky",
+    "brand": "NH",
+    "region": "Europe",
+    "country": "NL",
+    "sprout_profiles": [
+      { "profile_id": "sp_100009", "channel": "facebook" },
+      { "profile_id": "sp_100010", "channel": "instagram" }
+    ],
+    "metrics": {
+      "impressions": 289000,
+      "engagements": 11560,
+      "engagement_rate": 4.00,
+      "net_follower_growth": 780,
+      "video_views": 61000,
+      "messages_sent": 52
+    },
+    "weekly_history": [
+      { "period": "W01", "date": "2026-01-05", "impressions": 34000, "engagements": 1340, "net_follower_growth": 90 },
+      { "period": "W02", "date": "2026-01-12", "impressions": 34800, "engagements": 1380, "net_follower_growth": 94 },
+      { "period": "W03", "date": "2026-01-19", "impressions": 35500, "engagements": 1420, "net_follower_growth": 96 },
+      { "period": "W04", "date": "2026-01-26", "impressions": 36000, "engagements": 1440, "net_follower_growth": 98 },
+      { "period": "W05", "date": "2026-02-02", "impressions": 36200, "engagements": 1450, "net_follower_growth": 99 },
+      { "period": "W06", "date": "2026-02-09", "impressions": 37000, "engagements": 1490, "net_follower_growth": 102 },
+      { "period": "W07", "date": "2026-02-16", "impressions": 37500, "engagements": 1510, "net_follower_growth": 100 },
+      { "period": "W08", "date": "2026-02-23", "impressions": 38000, "engagements": 1530, "net_follower_growth": 101 }
+    ]
+  },
+  {
+    "hotel_id": "minor_006",
+    "name": "Anantara Villa Padierna Palace",
+    "brand": "AN",
+    "region": "Europe",
+    "country": "ES",
+    "sprout_profiles": [
+      { "profile_id": "sp_100011", "channel": "facebook" },
+      { "profile_id": "sp_100012", "channel": "instagram" }
+    ],
+    "metrics": {
+      "impressions": 210000,
+      "engagements": 7350,
+      "engagement_rate": 3.50,
+      "net_follower_growth": 540,
+      "video_views": 42000,
+      "messages_sent": 46
+    },
+    "weekly_history": [
+      { "period": "W01", "date": "2026-01-05", "impressions": 24500, "engagements": 850, "net_follower_growth": 62 },
+      { "period": "W02", "date": "2026-01-12", "impressions": 25200, "engagements": 880, "net_follower_growth": 65 },
+      { "period": "W03", "date": "2026-01-19", "impressions": 25800, "engagements": 905, "net_follower_growth": 67 },
+      { "period": "W04", "date": "2026-01-26", "impressions": 26000, "engagements": 910, "net_follower_growth": 68 },
+      { "period": "W05", "date": "2026-02-02", "impressions": 26500, "engagements": 930, "net_follower_growth": 69 },
+      { "period": "W06", "date": "2026-02-09", "impressions": 27000, "engagements": 950, "net_follower_growth": 70 },
+      { "period": "W07", "date": "2026-02-16", "impressions": 27500, "engagements": 965, "net_follower_growth": 70 },
+      { "period": "W08", "date": "2026-02-23", "impressions": 27500, "engagements": 960, "net_follower_growth": 69 }
+    ]
+  },
+  {
+    "hotel_id": "minor_007",
+    "name": "Anantara The Palm Dubai Resort",
+    "brand": "AN",
+    "region": "MEA",
+    "country": "AE",
+    "sprout_profiles": [
+      { "profile_id": "sp_100013", "channel": "facebook" },
+      { "profile_id": "sp_100014", "channel": "instagram" }
+    ],
+    "metrics": {
+      "impressions": 385000,
+      "engagements": 15400,
+      "engagement_rate": 4.00,
+      "net_follower_growth": 1150,
+      "video_views": 95000,
+      "messages_sent": 64
+    },
+    "weekly_history": [
+      { "period": "W01", "date": "2026-01-05", "impressions": 44000, "engagements": 1740, "net_follower_growth": 130 },
+      { "period": "W02", "date": "2026-01-12", "impressions": 45500, "engagements": 1800, "net_follower_growth": 138 },
+      { "period": "W03", "date": "2026-01-19", "impressions": 46800, "engagements": 1870, "net_follower_growth": 142 },
+      { "period": "W04", "date": "2026-01-26", "impressions": 47500, "engagements": 1910, "net_follower_growth": 145 },
+      { "period": "W05", "date": "2026-02-02", "impressions": 48200, "engagements": 1940, "net_follower_growth": 148 },
+      { "period": "W06", "date": "2026-02-09", "impressions": 49000, "engagements": 1970, "net_follower_growth": 150 },
+      { "period": "W07", "date": "2026-02-16", "impressions": 51000, "engagements": 2060, "net_follower_growth": 152 },
+      { "period": "W08", "date": "2026-02-23", "impressions": 53000, "engagements": 2110, "net_follower_growth": 145 }
+    ]
+  },
+  {
+    "hotel_id": "minor_008",
+    "name": "Avani Deira Dubai Hotel",
+    "brand": "AV",
+    "region": "MEA",
+    "country": "AE",
+    "sprout_profiles": [
+      { "profile_id": "sp_100015", "channel": "facebook" },
+      { "profile_id": "sp_100016", "channel": "instagram" }
+    ],
+    "metrics": {
+      "impressions": 142000,
+      "engagements": 1704,
+      "engagement_rate": 1.20,
+      "net_follower_growth": 95,
+      "video_views": 18000,
+      "messages_sent": 28
+    },
+    "weekly_history": [
+      { "period": "W01", "date": "2026-01-05", "impressions": 16500, "engagements": 198, "net_follower_growth": 10 },
+      { "period": "W02", "date": "2026-01-12", "impressions": 17000, "engagements": 204, "net_follower_growth": 11 },
+      { "period": "W03", "date": "2026-01-19", "impressions": 17200, "engagements": 207, "net_follower_growth": 12 },
+      { "period": "W04", "date": "2026-01-26", "impressions": 17500, "engagements": 210, "net_follower_growth": 12 },
+      { "period": "W05", "date": "2026-02-02", "impressions": 17800, "engagements": 214, "net_follower_growth": 12 },
+      { "period": "W06", "date": "2026-02-09", "impressions": 18200, "engagements": 220, "net_follower_growth": 13 },
+      { "period": "W07", "date": "2026-02-16", "impressions": 18800, "engagements": 226, "net_follower_growth": 13 },
+      { "period": "W08", "date": "2026-02-23", "impressions": 19000, "engagements": 225, "net_follower_growth": 12 }
+    ]
+  },
+  {
+    "hotel_id": "minor_009",
+    "name": "Anantara Al Jabal Al Akhdar Resort",
+    "brand": "AN",
+    "region": "MEA",
+    "country": "OM",
+    "sprout_profiles": [
+      { "profile_id": "sp_100017", "channel": "facebook" },
+      { "profile_id": "sp_100018", "channel": "instagram" }
+    ],
+    "metrics": {
+      "impressions": 168000,
+      "engagements": 5040,
+      "engagement_rate": 3.00,
+      "net_follower_growth": 380,
+      "video_views": 33000,
+      "messages_sent": 36
+    },
+    "weekly_history": [
+      { "period": "W01", "date": "2026-01-05", "impressions": 19500, "engagements": 580, "net_follower_growth": 44 },
+      { "period": "W02", "date": "2026-01-12", "impressions": 20000, "engagements": 600, "net_follower_growth": 46 },
+      { "period": "W03", "date": "2026-01-19", "impressions": 20500, "engagements": 615, "net_follower_growth": 47 },
+      { "period": "W04", "date": "2026-01-26", "impressions": 20800, "engagements": 625, "net_follower_growth": 48 },
+      { "period": "W05", "date": "2026-02-02", "impressions": 21000, "engagements": 630, "net_follower_growth": 48 },
+      { "period": "W06", "date": "2026-02-09", "impressions": 21500, "engagements": 648, "net_follower_growth": 49 },
+      { "period": "W07", "date": "2026-02-16", "impressions": 22000, "engagements": 665, "net_follower_growth": 50 },
+      { "period": "W08", "date": "2026-02-23", "impressions": 22700, "engagements": 677, "net_follower_growth": 48 }
+    ]
+  },
+  {
+    "hotel_id": "minor_010",
+    "name": "Tivoli Avenida Liberdade Lisboa",
+    "brand": "NH",
+    "region": "Europe",
+    "country": "PT",
+    "sprout_profiles": [
+      { "profile_id": "sp_100019", "channel": "facebook" },
+      { "profile_id": "sp_100020", "channel": "instagram" }
+    ],
+    "metrics": {
+      "impressions": 156000,
+      "engagements": 2340,
+      "engagement_rate": 1.50,
+      "net_follower_growth": 180,
+      "video_views": 22000,
+      "messages_sent": 30
+    },
+    "weekly_history": [
+      { "period": "W01", "date": "2026-01-05", "impressions": 18000, "engagements": 270, "net_follower_growth": 20 },
+      { "period": "W02", "date": "2026-01-12", "impressions": 18500, "engagements": 278, "net_follower_growth": 21 },
+      { "period": "W03", "date": "2026-01-19", "impressions": 19000, "engagements": 285, "net_follower_growth": 22 },
+      { "period": "W04", "date": "2026-01-26", "impressions": 19200, "engagements": 290, "net_follower_growth": 23 },
+      { "period": "W05", "date": "2026-02-02", "impressions": 19500, "engagements": 293, "net_follower_growth": 23 },
+      { "period": "W06", "date": "2026-02-09", "impressions": 20000, "engagements": 300, "net_follower_growth": 24 },
+      { "period": "W07", "date": "2026-02-16", "impressions": 20500, "engagements": 308, "net_follower_growth": 24 },
+      { "period": "W08", "date": "2026-02-23", "impressions": 21300, "engagements": 316, "net_follower_growth": 23 }
+    ]
+  }
+]
