@@ -4,6 +4,7 @@ import type {
   SproutAnalyticsResponse,
   SproutApiProfile,
 } from "./social-types";
+import { getCached, setCache, buildCacheKey } from "./sprout-cache";
 
 export async function checkHealth(proxyUrl: string, signal?: AbortSignal): Promise<SproutHealthResponse> {
   const res = await fetch(`${proxyUrl}/health`, { signal });
@@ -54,6 +55,10 @@ async function fetchReportingBatch(
   profileIds: string[],
   signal?: AbortSignal,
 ): Promise<SproutReportingRow[]> {
+  const cacheKey = buildCacheKey(startDate, endDate, profileIds);
+  const cached = getCached(cacheKey);
+  if (cached) return cached;
+
   const body = { start_date: startDate, end_date: endDate, profile_ids: profileIds };
 
   const res = await fetch(`${proxyUrl}/reporting`, {
@@ -69,7 +74,9 @@ async function fetchReportingBatch(
   }
 
   const json = (await res.json()) as SproutAnalyticsResponse;
-  return normalizeDailyRows(json.data);
+  const rows = normalizeDailyRows(json.data);
+  setCache(cacheKey, rows);
+  return rows;
 }
 
 /**
