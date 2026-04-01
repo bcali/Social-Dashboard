@@ -45,12 +45,24 @@ describe("transformToHotelEntries", () => {
 
   it("sums metrics across multiple profiles for one hotel", () => {
     const rows = [
-      makeRow({ profile_id: "p1", impressions: 1000, engagements: 50, video_views: 100, net_follower_growth: 10, messages_sent: 3 }),
-      makeRow({ profile_id: "p2", impressions: 2000, engagements: 100, video_views: 300, net_follower_growth: 20, messages_sent: 7 }),
+      makeRow({
+        profile_id: "p1",
+        impressions: 1000,
+        engagements: 50,
+        video_views: 100,
+        net_follower_growth: 10,
+        messages_sent: 3,
+      }),
+      makeRow({
+        profile_id: "p2",
+        impressions: 2000,
+        engagements: 100,
+        video_views: 300,
+        net_follower_growth: 20,
+        messages_sent: 7,
+      }),
     ];
-    const directory = [
-      makeDirectory({ profile_ids: ["p1", "p2"], channels: { p1: "facebook", p2: "instagram" } }),
-    ];
+    const directory = [makeDirectory({ profile_ids: ["p1", "p2"], channels: { p1: "facebook", p2: "instagram" } })];
     const result = transformToHotelEntries(rows, [], directory);
 
     expect(result).toHaveLength(1);
@@ -64,10 +76,7 @@ describe("transformToHotelEntries", () => {
   });
 
   it("skips unmapped profiles", () => {
-    const rows = [
-      makeRow({ profile_id: "p1" }),
-      makeRow({ profile_id: "unknown_profile" }),
-    ];
+    const rows = [makeRow({ profile_id: "p1" }), makeRow({ profile_id: "unknown_profile" })];
     const directory = [makeDirectory()];
     const result = transformToHotelEntries(rows, [], directory);
 
@@ -89,8 +98,16 @@ describe("transformToHotelEntries", () => {
 
   it("builds weekly history from weekly breakdown data", () => {
     const weeklyData: WeeklyReportingResult[] = [
-      { period: "W01", date: "2026-01-05", rows: [makeRow({ profile_id: "p1", impressions: 500, engagements: 25, net_follower_growth: 5 })] },
-      { period: "W02", date: "2026-01-12", rows: [makeRow({ profile_id: "p1", impressions: 600, engagements: 30, net_follower_growth: 7 })] },
+      {
+        period: "W01",
+        date: "2026-01-05",
+        rows: [makeRow({ profile_id: "p1", impressions: 500, engagements: 25, net_follower_growth: 5 })],
+      },
+      {
+        period: "W02",
+        date: "2026-01-12",
+        rows: [makeRow({ profile_id: "p1", impressions: 600, engagements: 30, net_follower_growth: 7 })],
+      },
     ];
     const directory = [makeDirectory()];
     const result = transformToHotelEntries([makeRow()], weeklyData, directory);

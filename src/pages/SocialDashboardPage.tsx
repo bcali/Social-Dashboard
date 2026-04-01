@@ -19,12 +19,20 @@ export function SocialDashboardPage() {
   const [appliedRegion, setAppliedRegion] = useState("all");
   const [appliedBrand, setAppliedBrand] = useState("all");
 
-  const { filteredHotels, aggregateMetrics, weeklyTrends, globalTop4, availableRegions, availableBrands, loading, isLive } =
-    useSproutData({
-      region: appliedRegion === "all" ? null : appliedRegion,
-      brand: appliedBrand === "all" ? null : appliedBrand,
-      dateRange,
-    });
+  const {
+    filteredHotels,
+    aggregateMetrics,
+    weeklyTrends,
+    globalTop4,
+    availableRegions,
+    availableBrands,
+    loading,
+    isLive,
+  } = useSproutData({
+    region: appliedRegion === "all" ? null : appliedRegion,
+    brand: appliedBrand === "all" ? null : appliedBrand,
+    dateRange,
+  });
 
   const hasPendingChanges = region !== appliedRegion || brand !== appliedBrand;
   const hasFilters = appliedRegion !== "all" || appliedBrand !== "all";
@@ -51,9 +59,7 @@ export function SocialDashboardPage() {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex items-center justify-end">
-        <Badge color={isLive ? "success" : "secondary"}>
-          {isLive ? "Live" : "Mock Data"}
-        </Badge>
+        <Badge color={isLive ? "success" : "secondary"}>{isLive ? "Live" : "Mock Data"}</Badge>
       </div>
 
       <ErrorBoundary name="Filters">

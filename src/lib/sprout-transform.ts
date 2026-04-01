@@ -1,10 +1,4 @@
-import type {
-  HotelDirectoryEntry,
-  HotelEntry,
-  HotelMetrics,
-  SproutReportingRow,
-  WeeklySnapshot,
-} from "./social-types";
+import type { HotelDirectoryEntry, HotelEntry, HotelMetrics, SproutReportingRow, WeeklySnapshot } from "./social-types";
 import type { WeeklyReportingResult } from "./sprout-client";
 
 /**

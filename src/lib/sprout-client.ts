@@ -5,19 +5,13 @@ import type {
   SproutApiProfile,
 } from "./social-types";
 
-export async function checkHealth(
-  proxyUrl: string,
-  signal?: AbortSignal,
-): Promise<SproutHealthResponse> {
+export async function checkHealth(proxyUrl: string, signal?: AbortSignal): Promise<SproutHealthResponse> {
   const res = await fetch(`${proxyUrl}/health`, { signal });
   if (!res.ok) throw new Error(`Health check failed: ${res.status}`);
   return res.json();
 }
 
-export async function fetchProfiles(
-  proxyUrl: string,
-  signal?: AbortSignal,
-): Promise<SproutApiProfile[]> {
+export async function fetchProfiles(proxyUrl: string, signal?: AbortSignal): Promise<SproutApiProfile[]> {
   const res = await fetch(`${proxyUrl}/profiles`, { signal });
   if (!res.ok) {
     const detail = await res.text().catch(() => "");
@@ -60,9 +54,7 @@ export async function fetchReporting(
  * Aggregates daily Sprout rows into one SproutReportingRow per profile.
  * Sums all metric fields across days for each customer_profile_id.
  */
-function normalizeDailyRows(
-  raw: SproutAnalyticsResponse["data"],
-): SproutReportingRow[] {
+function normalizeDailyRows(raw: SproutAnalyticsResponse["data"]): SproutReportingRow[] {
   const byProfile = new Map<
     number,
     { impressions: number; engagements: number; net_follower_growth: number; video_views: number }
@@ -92,8 +84,7 @@ function normalizeDailyRows(
       profile_id: String(pid),
       impressions: m.impressions,
       engagements: m.engagements,
-      engagement_rate_by_impressions_percentage:
-        m.impressions > 0 ? (m.engagements / m.impressions) * 100 : 0,
+      engagement_rate_by_impressions_percentage: m.impressions > 0 ? (m.engagements / m.impressions) * 100 : 0,
       net_follower_growth: m.net_follower_growth,
       video_views: m.video_views,
       messages_sent: 0, // Not available in analytics endpoint
