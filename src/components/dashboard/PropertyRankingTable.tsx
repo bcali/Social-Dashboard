@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { ArrowDown, ArrowUp, ArrowUpDown, Search, ChevronDown, ChevronUp } from "lucide-react";
+import { ArrowDown, ArrowUp, ArrowUpDown, Search } from "lucide-react";
 import { Badge, Input } from "@/components/ui";
 import { formatCompact, formatPercent } from "@/lib/format";
 import type { HotelEntry, GlobalTop4Baseline } from "@/lib/social-types";
@@ -28,9 +28,7 @@ export function PropertyRankingTable({ hotels, baseline }: PropertyRankingTableP
   const [sortKey, setSortKey] = useState<SortKey>("engagement_rate");
   const [sortDir, setSortDir] = useState<SortDir>("desc");
   const [search, setSearch] = useState("");
-  const [showAll, setShowAll] = useState(false);
-
-  const sorted = useMemo(() => {
+  const displayed = useMemo(() => {
     let filtered = hotels;
     if (search) {
       const q = search.toLowerCase();
@@ -44,8 +42,6 @@ export function PropertyRankingTable({ hotels, baseline }: PropertyRankingTableP
       return sortDir === "asc" ? cmp : -cmp;
     });
   }, [hotels, sortKey, sortDir, search]);
-
-  const displayed = showAll ? sorted : sorted.slice(0, 10);
 
   const handleSort = (key: SortKey) => {
     if (sortKey === key) {
@@ -72,9 +68,9 @@ export function PropertyRankingTable({ hotels, baseline }: PropertyRankingTableP
         </div>
       </div>
 
-      <div className="overflow-x-auto">
+      <div className="max-h-[480px] overflow-y-auto overflow-x-auto">
         <table className="ui-table w-full">
-          <thead>
+          <thead className="sticky top-0 z-10 bg-[var(--bg-card)]">
             <tr>
               <th className="w-12">#</th>
               <th>Hotel</th>
@@ -136,17 +132,6 @@ export function PropertyRankingTable({ hotels, baseline }: PropertyRankingTableP
           </tbody>
         </table>
       </div>
-
-      {sorted.length > 10 && (
-        <button
-          type="button"
-          onClick={() => setShowAll((s) => !s)}
-          className="w-full py-2 text-[11px] font-semibold text-[var(--color-primary)] hover:bg-[var(--bg-hover)] transition-colors flex items-center justify-center gap-1 cursor-pointer"
-        >
-          {showAll ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
-          {showAll ? "Show Top 10" : `Show All (${sorted.length})`}
-        </button>
-      )}
     </div>
   );
 }
