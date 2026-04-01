@@ -33,22 +33,20 @@ export function Overlay({ open, onClose, title, maxWidth = "2xl", children, clas
           )}
         >
           <div className={cn("ui-card w-full p-6", MAX_WIDTH_MAP[maxWidth], className)}>
-            {(title || true) && (
-              <div className="flex items-center justify-between mb-4">
-                {title && (
-                  <Dialog.Title className="text-lg font-semibold text-[var(--text-primary)]">{title}</Dialog.Title>
-                )}
-                <Dialog.Close asChild>
-                  <button
-                    type="button"
-                    className="p-1.5 rounded-md hover:bg-[var(--bg-elevated)] transition-colors text-[var(--text-muted)] hover:text-[var(--text-primary)]"
-                    aria-label="Close"
-                  >
-                    <X size={18} />
-                  </button>
-                </Dialog.Close>
-              </div>
-            )}
+            <div className="flex items-center justify-between mb-4">
+              {title && (
+                <Dialog.Title className="text-lg font-semibold text-[var(--text-primary)]">{title}</Dialog.Title>
+              )}
+              <Dialog.Close asChild>
+                <button
+                  type="button"
+                  className="p-1.5 rounded-md hover:bg-[var(--bg-elevated)] transition-colors text-[var(--text-muted)] hover:text-[var(--text-primary)]"
+                  aria-label="Close"
+                >
+                  <X size={18} />
+                </button>
+              </Dialog.Close>
+            </div>
             {children}
           </div>
         </Dialog.Content>

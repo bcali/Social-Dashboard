@@ -26,22 +26,18 @@ export function Drawer({ open, onClose, title, width = "480px", children, classN
           )}
           style={{ width }}
         >
-          {(title || true) && (
-            <div className="flex items-center justify-between px-6 py-4 border-b border-[var(--border)]">
-              {title && (
-                <Dialog.Title className="text-lg font-semibold text-[var(--text-primary)]">{title}</Dialog.Title>
-              )}
-              <Dialog.Close asChild>
-                <button
-                  type="button"
-                  className="p-1.5 rounded-md hover:bg-[var(--bg-elevated)] transition-colors text-[var(--text-muted)] hover:text-[var(--text-primary)]"
-                  aria-label="Close"
-                >
-                  <X size={18} />
-                </button>
-              </Dialog.Close>
-            </div>
-          )}
+          <div className="flex items-center justify-between px-6 py-4 border-b border-[var(--border)]">
+            {title && <Dialog.Title className="text-lg font-semibold text-[var(--text-primary)]">{title}</Dialog.Title>}
+            <Dialog.Close asChild>
+              <button
+                type="button"
+                className="p-1.5 rounded-md hover:bg-[var(--bg-elevated)] transition-colors text-[var(--text-muted)] hover:text-[var(--text-primary)]"
+                aria-label="Close"
+              >
+                <X size={18} />
+              </button>
+            </Dialog.Close>
+          </div>
           <div className="flex-1 overflow-y-auto p-6">{children}</div>
         </Dialog.Content>
       </Dialog.Portal>

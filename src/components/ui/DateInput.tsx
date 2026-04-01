@@ -1,7 +1,7 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 
-interface DateInputProps extends Omit<React.ComponentProps<"input">, "type"> {}
+type DateInputProps = Omit<React.ComponentProps<"input">, "type">;
 
 export function DateInput({ className, ...props }: DateInputProps) {
   return (
