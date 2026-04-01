@@ -4,7 +4,6 @@ compatibility_date = "2024-12-01"
 
 [vars]
 ALLOWED_ORIGIN = "https://bcali.github.io"
-SPROUT_CUSTOMER_ID = "__SPROUT_CUSTOMER_ID__"
-# Replace __SPROUT_CUSTOMER_ID__ with actual ID once provided by Debakti
+SPROUT_CUSTOMER_ID = "58a39fdd-aa4c-4be5-bbaa-8b9de7e5592b"
 
 # SPROUT_BEARER_TOKEN is set via: npx wrangler secret put SPROUT_BEARER_TOKEN
