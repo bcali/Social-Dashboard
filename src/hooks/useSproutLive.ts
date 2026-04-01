@@ -21,6 +21,8 @@ interface SproutLiveResult {
 /**
  * Fetches live data from the sprout-proxy worker and transforms it into HotelEntry[].
  * No-ops when proxyUrl is falsy (mock mode).
+ *
+ * Flow: health check → fetch profiles → fetch reporting (aggregate + weekly) → transform
  */
 export function useSproutLive(proxyUrl: string | undefined, dateRange: DateRange): SproutLiveResult {
   const [data, setData] = useState<HotelEntry[] | null>(null);
@@ -53,6 +55,9 @@ export function useSproutLive(proxyUrl: string | undefined, dateRange: DateRange
           return;
         }
 
+        // Collect all profile IDs from the hotel directory
+        const allProfileIds = directory!.flatMap((h) => h.profile_ids);
+
         // Compute date range — default to last 8 weeks from today
         const endDate = dateRange.end ?? new Date().toISOString().slice(0, 10);
         const startFallback = new Date(endDate);
@@ -61,8 +66,8 @@ export function useSproutLive(proxyUrl: string | undefined, dateRange: DateRange
 
         // Fetch aggregate + weekly breakdown in parallel
         const [aggregateRows, weeklyData] = await Promise.all([
-          fetchReporting(proxyUrl!, startDate, endDate, undefined, signal),
-          fetchWeeklyBreakdown(proxyUrl!, NUM_WEEKS, endDate, undefined, signal),
+          fetchReporting(proxyUrl!, startDate, endDate, allProfileIds, signal),
+          fetchWeeklyBreakdown(proxyUrl!, NUM_WEEKS, endDate, allProfileIds, signal),
         ]);
 
         if (signal.aborted) return;

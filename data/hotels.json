@@ -5,8 +5,8 @@
     "brand": "AN",
     "region": "AMEA",
     "country": "ID",
-    "profile_ids": ["PENDING_FB_001", "PENDING_IG_001"],
-    "channels": { "PENDING_FB_001": "facebook", "PENDING_IG_001": "instagram" }
+    "profile_ids": ["4234457", "4234251"],
+    "channels": { "4234457": "facebook", "4234251": "instagram" }
   },
   {
     "hotel_id": "minor_002",
@@ -14,8 +14,8 @@
     "brand": "AN",
     "region": "AMEA",
     "country": "TH",
-    "profile_ids": ["PENDING_FB_002", "PENDING_IG_002"],
-    "channels": { "PENDING_FB_002": "facebook", "PENDING_IG_002": "instagram" }
+    "profile_ids": ["4160939", "4143899"],
+    "channels": { "4160939": "facebook", "4143899": "instagram" }
   },
   {
     "hotel_id": "minor_003",
@@ -23,26 +23,26 @@
     "brand": "AV",
     "region": "AMEA",
     "country": "TH",
-    "profile_ids": ["PENDING_FB_003", "PENDING_IG_003"],
-    "channels": { "PENDING_FB_003": "facebook", "PENDING_IG_003": "instagram" }
+    "profile_ids": ["4224321", "4224323", "7192624"],
+    "channels": { "4224321": "facebook", "4224323": "instagram", "7192624": "tiktok" }
   },
   {
     "hotel_id": "minor_004",
-    "name": "NH Collection Barbizon Palace",
+    "name": "Tivoli Doelen Amsterdam",
     "brand": "NH",
     "region": "Europe",
     "country": "NL",
-    "profile_ids": ["PENDING_FB_004", "PENDING_IG_004"],
-    "channels": { "PENDING_FB_004": "facebook", "PENDING_IG_004": "instagram" }
+    "profile_ids": ["6896665", "6894230", "7194744"],
+    "channels": { "6896665": "facebook", "6894230": "instagram", "7194744": "tiktok" }
   },
   {
     "hotel_id": "minor_005",
-    "name": "NH Collection Grand Hotel Krasnapolsky",
-    "brand": "NH",
+    "name": "Anantara Grand Hotel Krasnapolsky Amsterdam",
+    "brand": "AN",
     "region": "Europe",
     "country": "NL",
-    "profile_ids": ["PENDING_FB_005", "PENDING_IG_005"],
-    "channels": { "PENDING_FB_005": "facebook", "PENDING_IG_005": "instagram" }
+    "profile_ids": ["5428505", "5446674"],
+    "channels": { "5428505": "facebook", "5446674": "instagram" }
   },
   {
     "hotel_id": "minor_006",
@@ -50,8 +50,8 @@
     "brand": "AN",
     "region": "Europe",
     "country": "ES",
-    "profile_ids": ["PENDING_FB_006", "PENDING_IG_006"],
-    "channels": { "PENDING_FB_006": "facebook", "PENDING_IG_006": "instagram" }
+    "profile_ids": ["4234464", "4234261", "7218340"],
+    "channels": { "4234464": "facebook", "4234261": "instagram", "7218340": "tiktok" }
   },
   {
     "hotel_id": "minor_007",
@@ -59,8 +59,8 @@
     "brand": "AN",
     "region": "MEA",
     "country": "AE",
-    "profile_ids": ["PENDING_FB_007", "PENDING_IG_007"],
-    "channels": { "PENDING_FB_007": "facebook", "PENDING_IG_007": "instagram" }
+    "profile_ids": ["4224228", "4224229"],
+    "channels": { "4224228": "facebook", "4224229": "instagram" }
   },
   {
     "hotel_id": "minor_008",
@@ -68,8 +68,8 @@
     "brand": "AV",
     "region": "MEA",
     "country": "AE",
-    "profile_ids": ["PENDING_FB_008", "PENDING_IG_008"],
-    "channels": { "PENDING_FB_008": "facebook", "PENDING_IG_008": "instagram" }
+    "profile_ids": ["4247360", "4779157"],
+    "channels": { "4247360": "facebook", "4779157": "instagram" }
   },
   {
     "hotel_id": "minor_009",
@@ -77,8 +77,8 @@
     "brand": "AN",
     "region": "MEA",
     "country": "OM",
-    "profile_ids": ["PENDING_FB_009", "PENDING_IG_009"],
-    "channels": { "PENDING_FB_009": "facebook", "PENDING_IG_009": "instagram" }
+    "profile_ids": ["4183035", "4183050", "7198664"],
+    "channels": { "4183035": "facebook", "4183050": "instagram", "7198664": "tiktok" }
   },
   {
     "hotel_id": "minor_010",
@@ -86,7 +86,7 @@
     "brand": "NH",
     "region": "Europe",
     "country": "PT",
-    "profile_ids": ["PENDING_FB_010", "PENDING_IG_010"],
-    "channels": { "PENDING_FB_010": "facebook", "PENDING_IG_010": "instagram" }
+    "profile_ids": ["6896704", "6894233"],
+    "channels": { "6896704": "facebook", "6894233": "instagram" }
   }
 ]

@@ -1,4 +1,9 @@
-import type { SproutHealthResponse, SproutReportingRow } from "./social-types";
+import type {
+  SproutHealthResponse,
+  SproutReportingRow,
+  SproutAnalyticsResponse,
+  SproutApiProfile,
+} from "./social-types";
 
 export async function checkHealth(
   proxyUrl: string,
@@ -9,15 +14,31 @@ export async function checkHealth(
   return res.json();
 }
 
+export async function fetchProfiles(
+  proxyUrl: string,
+  signal?: AbortSignal,
+): Promise<SproutApiProfile[]> {
+  const res = await fetch(`${proxyUrl}/profiles`, { signal });
+  if (!res.ok) {
+    const detail = await res.text().catch(() => "");
+    throw new Error(`Profiles API error ${res.status}: ${detail}`);
+  }
+  const json = (await res.json()) as { data: SproutApiProfile[] };
+  return json.data;
+}
+
+/**
+ * Fetches reporting data and normalizes Sprout's daily per-profile rows
+ * into aggregated SproutReportingRow[] (one row per profile, summed across days).
+ */
 export async function fetchReporting(
   proxyUrl: string,
   startDate: string,
   endDate: string,
-  profileIds?: string[],
+  profileIds: string[],
   signal?: AbortSignal,
 ): Promise<SproutReportingRow[]> {
-  const body: Record<string, unknown> = { start_date: startDate, end_date: endDate };
-  if (profileIds?.length) body.profile_ids = profileIds;
+  const body = { start_date: startDate, end_date: endDate, profile_ids: profileIds };
 
   const res = await fetch(`${proxyUrl}/reporting`, {
     method: "POST",
@@ -31,7 +52,55 @@ export async function fetchReporting(
     throw new Error(`Reporting API error ${res.status}: ${detail}`);
   }
 
-  return res.json();
+  const json = (await res.json()) as SproutAnalyticsResponse;
+  return normalizeDailyRows(json.data);
+}
+
+/**
+ * Aggregates daily Sprout rows into one SproutReportingRow per profile.
+ * Sums all metric fields across days for each customer_profile_id.
+ */
+function normalizeDailyRows(
+  raw: SproutAnalyticsResponse["data"],
+): SproutReportingRow[] {
+  const byProfile = new Map<
+    number,
+    { impressions: number; engagements: number; net_follower_growth: number; video_views: number }
+  >();
+
+  for (const row of raw) {
+    const pid = row.dimensions.customer_profile_id;
+    const existing = byProfile.get(pid);
+    if (existing) {
+      existing.impressions += row.metrics.impressions;
+      existing.engagements += row.metrics.engagements;
+      existing.net_follower_growth += row.metrics.net_follower_growth;
+      existing.video_views += row.metrics.video_views;
+    } else {
+      byProfile.set(pid, {
+        impressions: row.metrics.impressions,
+        engagements: row.metrics.engagements,
+        net_follower_growth: row.metrics.net_follower_growth,
+        video_views: row.metrics.video_views,
+      });
+    }
+  }
+
+  const results: SproutReportingRow[] = [];
+  for (const [pid, m] of byProfile) {
+    results.push({
+      profile_id: String(pid),
+      impressions: m.impressions,
+      engagements: m.engagements,
+      engagement_rate_by_impressions_percentage:
+        m.impressions > 0 ? (m.engagements / m.impressions) * 100 : 0,
+      net_follower_growth: m.net_follower_growth,
+      video_views: m.video_views,
+      messages_sent: 0, // Not available in analytics endpoint
+    });
+  }
+
+  return results;
 }
 
 /** Computes Monday-to-Sunday week boundaries going backward from endDate. */
@@ -69,7 +138,7 @@ export async function fetchWeeklyBreakdown(
   proxyUrl: string,
   numWeeks: number,
   endDate: string,
-  profileIds?: string[],
+  profileIds: string[],
   signal?: AbortSignal,
 ): Promise<WeeklyReportingResult[]> {
   const weeks = getWeekBoundaries(numWeeks, endDate);

@@ -69,7 +69,10 @@ export interface HotelDirectoryEntry {
   channels: Record<string, "facebook" | "instagram" | "tiktok">;
 }
 
-/** A single row from the Sprout /reporting endpoint (one per profile). */
+/**
+ * Normalized reporting row (one per profile, aggregated across the date range).
+ * The sprout-client normalizes daily Sprout API rows into this shape.
+ */
 export interface SproutReportingRow {
   profile_id: string;
   impressions: number;
@@ -78,6 +81,39 @@ export interface SproutReportingRow {
   net_follower_growth: number;
   video_views: number;
   messages_sent: number;
+}
+
+/** Raw row from the Sprout Analytics API (daily, per profile). */
+export interface SproutRawDataRow {
+  dimensions: {
+    customer_profile_id: number;
+    "reporting_period.by(day)": string;
+  };
+  metrics: {
+    impressions: number;
+    engagements: number;
+    net_follower_growth: number;
+    video_views: number;
+    reactions: number;
+    post_impressions: number;
+  };
+}
+
+/** Raw response wrapper from Sprout Analytics API. */
+export interface SproutAnalyticsResponse {
+  data: SproutRawDataRow[];
+  paging?: { current_page: number; total_pages: number };
+}
+
+/** Raw profile entry from Sprout /metadata/customer. */
+export interface SproutApiProfile {
+  customer_profile_id: number;
+  network_type: string;
+  name: string;
+  native_name: string;
+  link: string;
+  native_id: string;
+  groups: number[];
 }
 
 /** Response from the sprout-proxy /health endpoint. */
