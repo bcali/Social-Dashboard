@@ -7,7 +7,7 @@ interface OverlayProps {
   open: boolean;
   onClose: () => void;
   title?: string;
-  maxWidth?: "sm" | "md" | "lg" | "xl" | "2xl" | "3xl";
+  maxWidth?: "sm" | "md" | "lg" | "xl" | "2xl" | "3xl" | "full";
   children: ReactNode;
   className?: string;
 }
@@ -19,6 +19,7 @@ const MAX_WIDTH_MAP = {
   xl: "max-w-xl",
   "2xl": "max-w-2xl",
   "3xl": "max-w-3xl",
+  full: "max-w-[95vw]",
 };
 
 export function Overlay({ open, onClose, title, maxWidth = "2xl", children, className }: OverlayProps) {
