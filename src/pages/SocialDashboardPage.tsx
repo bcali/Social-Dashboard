@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ErrorBoundary } from "@/components/ui";
+import { ErrorBoundary, Badge } from "@/components/ui";
 import { SocialKpiBar } from "@/components/dashboard/SocialKpiBar";
 import { SocialFilterBar } from "@/components/dashboard/SocialFilterBar";
 import { PropertyRankingTable } from "@/components/dashboard/PropertyRankingTable";
@@ -19,10 +19,11 @@ export function SocialDashboardPage() {
   const [appliedRegion, setAppliedRegion] = useState("all");
   const [appliedBrand, setAppliedBrand] = useState("all");
 
-  const { filteredHotels, aggregateMetrics, weeklyTrends, globalTop4, availableRegions, availableBrands, loading } =
+  const { filteredHotels, aggregateMetrics, weeklyTrends, globalTop4, availableRegions, availableBrands, loading, isLive } =
     useSproutData({
       region: appliedRegion === "all" ? null : appliedRegion,
       brand: appliedBrand === "all" ? null : appliedBrand,
+      dateRange,
     });
 
   const hasPendingChanges = region !== appliedRegion || brand !== appliedBrand;
@@ -49,6 +50,12 @@ export function SocialDashboardPage() {
 
   return (
     <div className="flex flex-col gap-4">
+      <div className="flex items-center justify-end">
+        <Badge color={isLive ? "success" : "secondary"}>
+          {isLive ? "Live" : "Mock Data"}
+        </Badge>
+      </div>
+
       <ErrorBoundary name="Filters">
         <SocialFilterBar
           pendingDateRange={dateRange}
