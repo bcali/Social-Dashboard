@@ -90,12 +90,12 @@ export interface SproutRawDataRow {
     "reporting_period.by(day)": string;
   };
   metrics: {
-    impressions: number;
-    engagements: number;
-    net_follower_growth: number;
-    video_views: number;
-    reactions: number;
-    post_impressions: number;
+    impressions?: number;
+    engagements?: number;
+    net_follower_growth?: number;
+    video_views?: number;
+    reactions?: number;
+    post_impressions?: number;
   };
 }
 

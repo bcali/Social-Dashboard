@@ -120,18 +120,23 @@ function normalizeDailyRows(raw: SproutAnalyticsResponse["data"]): SproutReporti
 
   for (const row of raw) {
     const pid = row.dimensions.customer_profile_id;
+    const m = row.metrics;
+    const imp = m.impressions ?? 0;
+    const eng = m.engagements ?? 0;
+    const nfg = m.net_follower_growth ?? 0;
+    const vv = m.video_views ?? 0;
     const existing = byProfile.get(pid);
     if (existing) {
-      existing.impressions += row.metrics.impressions;
-      existing.engagements += row.metrics.engagements;
-      existing.net_follower_growth += row.metrics.net_follower_growth;
-      existing.video_views += row.metrics.video_views;
+      existing.impressions += imp;
+      existing.engagements += eng;
+      existing.net_follower_growth += nfg;
+      existing.video_views += vv;
     } else {
       byProfile.set(pid, {
-        impressions: row.metrics.impressions,
-        engagements: row.metrics.engagements,
-        net_follower_growth: row.metrics.net_follower_growth,
-        video_views: row.metrics.video_views,
+        impressions: imp,
+        engagements: eng,
+        net_follower_growth: nfg,
+        video_views: vv,
       });
     }
   }
