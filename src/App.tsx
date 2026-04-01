@@ -14,7 +14,7 @@ export default function App() {
       <Layout navItems={navItems} activeView={activeView} onNavigate={setActiveView}>
         {activeView === "dashboard" && <DashboardPage />}
       </Layout>
-      <Toaster theme="dark" position="bottom-right" />
+      <Toaster theme="light" position="bottom-right" />
     </>
   );
 }
