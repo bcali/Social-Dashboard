@@ -19,7 +19,7 @@ const MAX_WIDTH_MAP = {
   xl: "max-w-xl",
   "2xl": "max-w-2xl",
   "3xl": "max-w-3xl",
-  full: "max-w-[95vw]",
+  full: "max-w-[98vw]",
 };
 
 export function Overlay({ open, onClose, title, maxWidth = "2xl", children, className }: OverlayProps) {
@@ -29,7 +29,8 @@ export function Overlay({ open, onClose, title, maxWidth = "2xl", children, clas
         <Dialog.Overlay className="fixed inset-0 bg-black/50 z-40 animate-in fade-in" />
         <Dialog.Content
           className={cn(
-            "fixed inset-0 z-50 flex items-start justify-center p-8 overflow-y-auto",
+            "fixed inset-0 z-50 flex items-start justify-center overflow-y-auto",
+            maxWidth === "full" ? "p-3" : "p-8",
             "animate-in zoom-in-95 fade-in",
           )}
         >

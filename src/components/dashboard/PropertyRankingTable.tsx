@@ -164,7 +164,7 @@ export function PropertyRankingTable({ hotels, baseline }: PropertyRankingTableP
           </div>
           <span className="text-[11px] text-[var(--text-muted)]">{displayed.length} hotels</span>
         </div>
-        {tableContent("max-h-[80vh]")}
+        {tableContent("max-h-[85vh]")}
       </Overlay>
     </>
   );
