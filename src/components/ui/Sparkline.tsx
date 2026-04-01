@@ -22,7 +22,14 @@ export function Sparkline({ data, color, width = 80, height = 24 }: SparklinePro
 
   return (
     <svg width={width} height={height} className="inline-block" aria-hidden="true">
-      <polyline points={points} fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <polyline
+        points={points}
+        fill="none"
+        stroke={color}
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
       {valid.length > 0 && (
         <circle
           cx={padding + drawW}
