@@ -2,7 +2,7 @@
 
 **Status:** Draft  
 **Owner:** Brian Clark  
-**Last Updated:** 2026-03-31  
+**Last Updated:** 2026-04-01  
 **Repo:** `bcali/Social-Dashboard`  
 **Data Source:** Sprout Social API  
 
@@ -205,9 +205,10 @@ Columns:
 | ▲/▼ | vs. previous period |
 
 **Behavior:**
-- Default: Top 10 by Engagement Rate, all regions
+- All hotels shown by default in a scrollable frame (480px max height)
+- Table header and baseline row stay pinned during scroll
 - Toggle sort metric via column header click
-- "Show all" expands table
+- Expand button opens a near-fullscreen overlay (95vw) for full review
 - At Global level: ranks all properties. At Region level: ranks within region only.
 - **Baseline row (always global top 4):** Pinned row at top showing the average of the top 4 globally-ranked properties by engagement rate — regardless of what region/brand filter is active. Highlighted with `ui-glow-success`. Label: "Global Top 4 Avg". This is the benchmark every property is measured against.
 - Search/filter by hotel name inline
@@ -226,6 +227,26 @@ baseline = {
 ```
 
 Baseline is always computed on the same date range as the current filter. It does not change when region/brand filter changes.
+
+#### Baseline Methodology — Detailed
+
+**Data source:** All hotels in `data/hotels.json` with mapped Sprout Social profile IDs. Each hotel's metrics are the sum of all its social profiles (Facebook, Instagram, TikTok) across the selected date range.
+
+**Step-by-step calculation (`useSproutData.ts:computeGlobalTop4`):**
+
+1. **Input:** All hotels (unfiltered — region/brand selection is ignored)
+2. **Per-hotel engagement rate:** Each hotel's `engagement_rate` = `hotel.engagements / hotel.impressions × 100`. This is a weighted rate across all channels for that hotel.
+3. **Selection:** Sort all hotels descending by engagement rate. Take the top 4.
+4. **Baseline engagement rate:** `sum(top4.engagements) / sum(top4.impressions) × 100` — this is **impression-weighted**, not a simple average of the 4 rates. A hotel with more impressions has more influence on the baseline.
+5. **Baseline impressions:** Simple average of the 4 hotels' impressions.
+6. **Baseline follower growth:** Simple average of the 4 hotels' net follower growth.
+
+**Why impression-weighted engagement rate?** A simple average of rates would give equal weight to a hotel with 100 impressions and one with 1,000,000. Weighting by impressions reflects the overall engagement quality of the top-performing hotels at scale, which is more meaningful for benchmarking.
+
+**Open questions for review:**
+1. _Minimum impressions threshold:_ A hotel with very few impressions could appear in the top 4 with an artificially high engagement rate (e.g., 10 engagements / 100 impressions = 10%). Should a minimum impressions floor apply?
+2. _Channel normalization:_ Hotels with 3 channels naturally accumulate more impressions than hotels with 2. No normalization is applied — this is intentional (total reach matters regardless of channel count) but should be validated.
+3. _Fixed top N:_ The "4" is fixed. With 580+ hotels this is <1% of the dataset. Consider whether this should be configurable.
 
 **Validation note:** This ranking output must be manually spot-checked by Dena against hand-calculated results during UAT. Flag discrepancies in `docs/validation-log.md`.
 
@@ -373,8 +394,10 @@ Cloudflare Worker (/workers/gamma-proxy)  ← KEY NOT YET PROVISIONED
 Gamma API
 ```
 
-**New workers needed:** `sprout-proxy.ts`, `anthropic-proxy.ts`  
-**Existing worker to extend:** `gamma-proxy.ts` (once key is provisioned)
+**Workers:**
+- `sprout-proxy` — **Deployed** at `sprout-proxy.brianc-uw.workers.dev`. Live with real Sprout API credentials (Customer ID: 1313096). Uses Sprout filter DSL for `/analytics/profiles` and `/metadata/customer` endpoints.
+- `anthropic-proxy` — Not yet built
+- `gamma-proxy` — Built, blocked on `GAMMA_API_KEY` provisioning
 
 **Cloudflare secrets to add:**
 - `SPROUT_BEARER_TOKEN`
