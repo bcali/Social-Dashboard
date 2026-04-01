@@ -3,7 +3,7 @@ interface HeaderProps {
   subtitle?: string;
 }
 
-export function Header({ title = "__PROJECT_NAME__", subtitle = "Dashboard" }: HeaderProps) {
+export function Header({ title = "Social Dashboard", subtitle = "Overview" }: HeaderProps) {
   return (
     <header className="h-14 bg-[var(--bg-card)] border-b border-[var(--border)] flex items-center px-6 shadow-sm z-10">
       <div className="flex items-center space-x-3 flex-1">

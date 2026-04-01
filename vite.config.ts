@@ -21,7 +21,7 @@ function syncData(): Plugin {
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), syncData()],
-  base: process.env.VITE_BASE_PATH || "/__BASE_PATH__/",
+  base: process.env.VITE_BASE_PATH || "/Social-Dashboard/",
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),

@@ -3,8 +3,8 @@ main = "src/index.ts"
 compatibility_date = "2024-12-01"
 
 [vars]
-ALLOWED_ORIGIN = "https://__GITHUB_USERNAME__.github.io"
-REPO_OWNER = "__GITHUB_USERNAME__"
-REPO_NAME = "__PROJECT_NAME__"
+ALLOWED_ORIGIN = "https://bcali.github.io"
+REPO_OWNER = "bcali"
+REPO_NAME = "Social-Dashboard"
 
 # GITHUB_PAT is set via: npx wrangler secret put GITHUB_PAT
