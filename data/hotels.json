@@ -1,92 +1,5808 @@
 [
   {
-    "hotel_id": "minor_001",
-    "name": "Anantara Seminyak Bali Resort",
+    "hotel_id": "sprout_0014",
+    "name": "Al Baleed Resort Salalah by Anantara",
     "brand": "AN",
-    "region": "AMEA",
-    "country": "ID",
-    "profile_ids": ["4234457", "4234251"],
-    "channels": { "4234457": "facebook", "4234251": "instagram" }
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4183036"
+    ],
+    "channels": {
+      "4183036": "facebook"
+    }
   },
   {
-    "hotel_id": "minor_002",
-    "name": "Anantara Siam Bangkok Hotel",
+    "hotel_id": "sprout_0020",
+    "name": "Al Baleed Salalah By Anantara",
     "brand": "AN",
-    "region": "AMEA",
-    "country": "TH",
-    "profile_ids": ["4160939", "4143899"],
-    "channels": { "4160939": "facebook", "4143899": "instagram" }
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4183044"
+    ],
+    "channels": {
+      "4183044": "instagram"
+    }
   },
   {
-    "hotel_id": "minor_003",
-    "name": "Avani+ Riverside Bangkok Hotel",
-    "brand": "AV",
-    "region": "AMEA",
-    "country": "TH",
-    "profile_ids": ["4224321", "4224323", "7192624"],
-    "channels": { "4224321": "facebook", "4224323": "instagram", "7192624": "tiktok" }
-  },
-  {
-    "hotel_id": "minor_004",
-    "name": "Tivoli Doelen Amsterdam",
-    "brand": "NH",
-    "region": "Europe",
-    "country": "NL",
-    "profile_ids": ["6896665", "6894230", "7194744"],
-    "channels": { "6896665": "facebook", "6894230": "instagram", "7194744": "tiktok" }
-  },
-  {
-    "hotel_id": "minor_005",
-    "name": "Anantara Grand Hotel Krasnapolsky Amsterdam",
+    "hotel_id": "sprout_0023",
+    "name": "Anantara Al Jabal Al Akhdar",
     "brand": "AN",
-    "region": "Europe",
-    "country": "NL",
-    "profile_ids": ["5428505", "5446674"],
-    "channels": { "5428505": "facebook", "5446674": "instagram" }
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4183050",
+      "7198664"
+    ],
+    "channels": {
+      "4183050": "instagram",
+      "7198664": "tiktok"
+    }
   },
   {
-    "hotel_id": "minor_006",
-    "name": "Anantara Villa Padierna Palace",
-    "brand": "AN",
-    "region": "Europe",
-    "country": "ES",
-    "profile_ids": ["4234464", "4234261", "7218340"],
-    "channels": { "4234464": "facebook", "4234261": "instagram", "7218340": "tiktok" }
-  },
-  {
-    "hotel_id": "minor_007",
-    "name": "Anantara The Palm Dubai Resort",
-    "brand": "AN",
-    "region": "MEA",
-    "country": "AE",
-    "profile_ids": ["4224228", "4224229"],
-    "channels": { "4224228": "facebook", "4224229": "instagram" }
-  },
-  {
-    "hotel_id": "minor_008",
-    "name": "Avani Deira Dubai Hotel",
-    "brand": "AV",
-    "region": "MEA",
-    "country": "AE",
-    "profile_ids": ["4247360", "4779157"],
-    "channels": { "4247360": "facebook", "4779157": "instagram" }
-  },
-  {
-    "hotel_id": "minor_009",
+    "hotel_id": "sprout_0013",
     "name": "Anantara Al Jabal Al Akhdar Resort",
     "brand": "AN",
-    "region": "MEA",
-    "country": "OM",
-    "profile_ids": ["4183035", "4183050", "7198664"],
-    "channels": { "4183035": "facebook", "4183050": "instagram", "7198664": "tiktok" }
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4183035"
+    ],
+    "channels": {
+      "4183035": "facebook"
+    }
   },
   {
-    "hotel_id": "minor_010",
-    "name": "Tivoli Avenida Liberdade Lisboa",
+    "hotel_id": "sprout_0351",
+    "name": "Anantara Al Sahel Villa Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7224346",
+      "7228869",
+      "7228873"
+    ],
+    "channels": {
+      "7224346": "tiktok",
+      "7228869": "instagram",
+      "7228873": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0348",
+    "name": "Anantara Al Yamm Villa Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7224312",
+      "7228867",
+      "7228871"
+    ],
+    "channels": {
+      "7224312": "tiktok",
+      "7228867": "instagram",
+      "7228871": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0067",
+    "name": "Anantara Angkor Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4227043",
+      "4227044",
+      "7198671"
+    ],
+    "channels": {
+      "4227043": "facebook",
+      "4227044": "instagram",
+      "7198671": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0033",
+    "name": "Anantara Bazaruto Island",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4190461",
+      "7198616"
+    ],
+    "channels": {
+      "4190461": "instagram",
+      "7198616": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0032",
+    "name": "Anantara Bazaruto Island Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4190459"
+    ],
+    "channels": {
+      "4190459": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0327",
+    "name": "Anantara Bophut Koh Samui",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7211394"
+    ],
+    "channels": {
+      "7211394": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0059",
+    "name": "Anantara Bophut Koh Samui Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4221397"
+    ],
+    "channels": {
+      "4221397": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0060",
+    "name": "Anantara Bophut Samui Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4221398"
+    ],
+    "channels": {
+      "4221398": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0343",
+    "name": "Anantara Budapest",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7218342"
+    ],
+    "channels": {
+      "7218342": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0318",
+    "name": "Anantara Chiang Mai",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7198675"
+    ],
+    "channels": {
+      "7198675": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0017",
+    "name": "Anantara Chiang Mai Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4183039",
+      "4183049"
+    ],
+    "channels": {
+      "4183039": "facebook",
+      "4183049": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0092",
+    "name": "Anantara Chiang Mai Serviced Suites",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4247352"
+    ],
+    "channels": {
+      "4247352": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0273",
+    "name": "Anantara Concorso Roma",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6977518"
+    ],
+    "channels": {
+      "6977518": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0171",
+    "name": "Anantara Convento Di Amalfi",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6155683",
+      "7194756"
+    ],
+    "channels": {
+      "6155683": "instagram",
+      "7194756": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0168",
+    "name": "Anantara Convento Di Amalfi Grand Hotel",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6155679"
+    ],
+    "channels": {
+      "6155679": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0350",
+    "name": "Anantara Desaru Coast",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7224343"
+    ],
+    "channels": {
+      "7224343": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0102",
+    "name": "Anantara Desaru Coast Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4293372"
+    ],
+    "channels": {
+      "4293372": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0062",
+    "name": "Anantara Desaru Coast Resort & Villas",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4224294"
+    ],
+    "channels": {
+      "4224294": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0349",
+    "name": "Anantara Desert Islands",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7224317"
+    ],
+    "channels": {
+      "7224317": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0045",
+    "name": "Anantara Dhigu Maldives Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4192456",
+      "4192458",
+      "7432143"
+    ],
+    "channels": {
+      "4192456": "facebook",
+      "4192458": "instagram",
+      "7432143": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0140",
+    "name": "Anantara Downtown Dubai",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5358284"
+    ],
+    "channels": {
+      "5358284": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0139",
+    "name": "Anantara Downtown Dubai Hotel",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5358278",
+      "7403360"
+    ],
+    "channels": {
+      "5358278": "facebook",
+      "7403360": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0355",
+    "name": "Anantara Dragon Seseh Bali",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7234785"
+    ],
+    "channels": {
+      "7234785": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0387",
+    "name": "Anantara Dubai Spa",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7297972"
+    ],
+    "channels": {
+      "7297972": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0021",
+    "name": "Anantara Eastern Mangroves",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4183045"
+    ],
+    "channels": {
+      "4183045": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0016",
+    "name": "Anantara Eastern Mangroves Abu Dhabi Hotel",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4183038"
+    ],
+    "channels": {
+      "4183038": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0078",
+    "name": "Anantara Golden Triangle",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234256"
+    ],
+    "channels": {
+      "4234256": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0082",
+    "name": "Anantara Golden Triangle Elephant Camp & Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234438"
+    ],
+    "channels": {
+      "4234438": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0146",
+    "name": "Anantara Grand Hotel Krasnapolsky",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5446674"
+    ],
+    "channels": {
+      "5446674": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0141",
+    "name": "Anantara Grand Hotel Krasnapolsky Amsterdam",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5428505"
+    ],
+    "channels": {
+      "5428505": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0053",
+    "name": "Anantara Hoi An Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4205569",
+      "4205570",
+      "7198652"
+    ],
+    "channels": {
+      "4205569": "facebook",
+      "4205570": "instagram",
+      "7198652": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0001",
+    "name": "Anantara Hotels & Resorts",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4127655",
+      "4127685"
+    ],
+    "channels": {
+      "4127655": "facebook",
+      "4127685": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0136",
+    "name": "Anantara Hotels Resorts & Spas",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5250369"
+    ],
+    "channels": {
+      "5250369": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0048",
+    "name": "Anantara Hua Hin Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4194816",
+      "4194820",
+      "7198642"
+    ],
+    "channels": {
+      "4194816": "facebook",
+      "4194820": "instagram",
+      "7198642": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0072",
+    "name": "Anantara Iko Mauritius Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234250",
+      "7167102"
+    ],
+    "channels": {
+      "4234250": "instagram",
+      "7167102": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0086",
+    "name": "Anantara Iko Mauritius Resort & Villas",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234460"
+    ],
+    "channels": {
+      "4234460": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0394",
+    "name": "Anantara Jewel Bagh Jaipur Hotel",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7423005",
+      "7423011"
+    ],
+    "channels": {
+      "7423005": "facebook",
+      "7423011": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0015",
+    "name": "Anantara Kalutara Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4183037",
+      "4183048",
+      "7198646"
+    ],
+    "channels": {
+      "4183037": "facebook",
+      "4183048": "instagram",
+      "7198646": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0330",
+    "name": "Anantara Kihavah",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7215014"
+    ],
+    "channels": {
+      "7215014": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0028",
+    "name": "Anantara Kihavah Maldives Villas",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4186110",
+      "4186125"
+    ],
+    "channels": {
+      "4186110": "facebook",
+      "4186125": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0147",
+    "name": "Anantara Koh Yao Yai Resort & Villas",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5578909",
+      "5578946"
+    ],
+    "channels": {
+      "5578909": "facebook",
+      "5578946": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0070",
+    "name": "Anantara Lawana Koh Samui Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4232168",
+      "4232183"
+    ],
+    "channels": {
+      "4232168": "facebook",
+      "4232183": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0077",
+    "name": "Anantara Layan Phuket Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234255",
+      "4234456",
+      "7198648"
+    ],
+    "channels": {
+      "4234255": "instagram",
+      "4234456": "facebook",
+      "7198648": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0071",
+    "name": "Anantara Mai Khao Phuket",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234247",
+      "7198770"
+    ],
+    "channels": {
+      "4234247": "instagram",
+      "7198770": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0085",
+    "name": "Anantara Mai Khao Phuket Villas",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234453"
+    ],
+    "channels": {
+      "4234453": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0319",
+    "name": "Anantara Maia",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7198679"
+    ],
+    "channels": {
+      "7198679": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0122",
+    "name": "Anantara Maia Seychelles Villas",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4779130",
+      "4779159"
+    ],
+    "channels": {
+      "4779130": "facebook",
+      "4779159": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0030",
+    "name": "Anantara Medjumbe Island",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4190226"
+    ],
+    "channels": {
+      "4190226": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0029",
+    "name": "Anantara Medjumbe Island Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4190225"
+    ],
+    "channels": {
+      "4190225": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0160",
+    "name": "Anantara Mina Al Arab Ras Al Khaimah Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6056101"
+    ],
+    "channels": {
+      "6056101": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0331",
+    "name": "Anantara Mina Ras Al Khaimah",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7215084"
+    ],
+    "channels": {
+      "7215084": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0161",
+    "name": "Anantara Mina Ras Al Khaimah Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6056302"
+    ],
+    "channels": {
+      "6056302": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0010",
+    "name": "Anantara Mui Ne Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4180873",
+      "4182986",
+      "7198653"
+    ],
+    "channels": {
+      "4180873": "facebook",
+      "4182986": "instagram",
+      "7198653": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0145",
+    "name": "Anantara New York Palace Budapest",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5444503"
+    ],
+    "channels": {
+      "5444503": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0144",
+    "name": "Anantara New York Palace Budapest Hotel",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5442210"
+    ],
+    "channels": {
+      "5442210": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0178",
+    "name": "Anantara Palais Hansen Vienna",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6349419"
+    ],
+    "channels": {
+      "6349419": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0179",
+    "name": "Anantara Palais Hansen Vienna Hotel",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6444566"
+    ],
+    "channels": {
+      "6444566": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0170",
+    "name": "Anantara Palazzo Naiadi",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6155682"
+    ],
+    "channels": {
+      "6155682": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0169",
+    "name": "Anantara Palazzo Naiadi Rome Hotel",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6155680"
+    ],
+    "channels": {
+      "6155680": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0018",
+    "name": "Anantara Peace Haven Tangalle Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4183040",
+      "4183047"
+    ],
+    "channels": {
+      "4183040": "facebook",
+      "4183047": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0167",
+    "name": "Anantara Plaza Nice Hotel",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6155677",
+      "6155684"
+    ],
+    "channels": {
+      "6155677": "facebook",
+      "6155684": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0043",
+    "name": "Anantara Qasr Al Sarab",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4192364",
+      "7233689"
+    ],
+    "channels": {
+      "4192364": "instagram",
+      "7233689": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0054",
+    "name": "Anantara Quy Nhon Villas",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4205571",
+      "4205577",
+      "7198649"
+    ],
+    "channels": {
+      "4205571": "facebook",
+      "4205577": "instagram",
+      "7198649": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0317",
+    "name": "Anantara Rasananda Koh Phangan",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7198674"
+    ],
+    "channels": {
+      "7198674": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0051",
+    "name": "Anantara Rasananda Koh Phangan Villas",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4205466"
+    ],
+    "channels": {
+      "4205466": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0064",
+    "name": "Anantara Riverside Bangkok",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4224320"
+    ],
+    "channels": {
+      "4224320": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0063",
+    "name": "Anantara Riverside Bangkok Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4224318"
+    ],
+    "channels": {
+      "4224318": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0175",
+    "name": "Anantara Santorini Abu Dhabi",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6233549",
+      "7234797"
+    ],
+    "channels": {
+      "6233549": "facebook",
+      "7234797": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0176",
+    "name": "Anantara Santorini Abu Dhabi Retreat",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6233550"
+    ],
+    "channels": {
+      "6233550": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0073",
+    "name": "Anantara Seminyak Bali Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234251",
+      "4234457"
+    ],
+    "channels": {
+      "4234251": "instagram",
+      "4234457": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0075",
+    "name": "Anantara Serviced Suites",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234253"
+    ],
+    "channels": {
+      "4234253": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0003",
+    "name": "Anantara Siam Bangkok Hotel",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4143899",
+      "4160939"
+    ],
+    "channels": {
+      "4143899": "instagram",
+      "4160939": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0011",
+    "name": "Anantara Sir Bani Yas Island Resorts",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4183004"
+    ],
+    "channels": {
+      "4183004": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0074",
+    "name": "Anantara Spa - Dubai",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234252"
+    ],
+    "channels": {
+      "4234252": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0079",
+    "name": "Anantara Spa & Wellness",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234258"
+    ],
+    "channels": {
+      "4234258": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0191",
+    "name": "Anantara Stanley & Livingstone Victoria Falls",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6872598",
+      "6872599"
+    ],
+    "channels": {
+      "6872598": "instagram",
+      "6872599": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0380",
+    "name": "Anantara Tented Camp Kafue River",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7270259",
+      "7270260"
+    ],
+    "channels": {
+      "7270259": "facebook",
+      "7270260": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0181",
+    "name": "Anantara The Marker Dublin Hotel",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6581041",
+      "6739333"
+    ],
+    "channels": {
+      "6581041": "facebook",
+      "6739333": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0061",
+    "name": "Anantara The Palm Dubai Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4224228",
+      "4224229"
+    ],
+    "channels": {
+      "4224228": "facebook",
+      "4224229": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0182",
+    "name": "Anantara Ubud Bali Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6590582",
+      "6594656",
+      "7252436"
+    ],
+    "channels": {
+      "6590582": "facebook",
+      "6594656": "instagram",
+      "7252436": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0066",
+    "name": "Anantara Uluwatu Bali Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4224336",
+      "4224337",
+      "7198706"
+    ],
+    "channels": {
+      "4224336": "facebook",
+      "4224337": "instagram",
+      "7198706": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0046",
+    "name": "Anantara Veli Maldives Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4192460",
+      "4192462",
+      "7432147"
+    ],
+    "channels": {
+      "4192460": "facebook",
+      "4192462": "instagram",
+      "7432147": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0087",
+    "name": "Anantara Villa Padierna Palace Benahavis Marbella Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234464"
+    ],
+    "channels": {
+      "4234464": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0081",
+    "name": "Anantara Villa Padierna Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234261",
+      "7218340"
+    ],
+    "channels": {
+      "4234261": "instagram",
+      "7218340": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0357",
+    "name": "Anantara Wellness Riverside",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7262523",
+      "7262547"
+    ],
+    "channels": {
+      "7262523": "facebook",
+      "7262547": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0135",
+    "name": "Anantara World Islands Dubai",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5020148"
+    ],
+    "channels": {
+      "5020148": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0134",
+    "name": "Anantara World Islands Dubai Resort",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5020122"
+    ],
+    "channels": {
+      "5020122": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0314",
+    "name": "anantaragoldentriangle",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7198654"
+    ],
+    "channels": {
+      "7198654": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0383",
+    "name": "anantarakafue",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7270405"
+    ],
+    "channels": {
+      "7270405": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0320",
+    "name": "anantarakohyaoyai",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7198680"
+    ],
+    "channels": {
+      "7198680": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0313",
+    "name": "anantaralawana",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7198647"
+    ],
+    "channels": {
+      "7198647": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0316",
+    "name": "anantarariverside",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7198665"
+    ],
+    "channels": {
+      "7198665": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0315",
+    "name": "anantarasiambangkok",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7198655"
+    ],
+    "channels": {
+      "7198655": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0354",
+    "name": "anantarasirbaniyasisland",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7234723"
+    ],
+    "channels": {
+      "7234723": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0335",
+    "name": "anantarastanleyandlivingstone",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7216942"
+    ],
+    "channels": {
+      "7216942": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0356",
+    "name": "anantaratangalle",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7252235"
+    ],
+    "channels": {
+      "7252235": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0322",
+    "name": "anantarathepalmdubai",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7198768"
+    ],
+    "channels": {
+      "7198768": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0311",
+    "name": "anantaraworldislandsdubai",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7198640"
+    ],
+    "channels": {
+      "7198640": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0036",
+    "name": "Banana Island Resort Doha by Anantara",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4190488"
+    ],
+    "channels": {
+      "4190488": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0352",
+    "name": "Desert Islands Resort & Spa by Anantara",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7228868",
+      "7228872"
+    ],
+    "channels": {
+      "7228868": "instagram",
+      "7228872": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0312",
+    "name": "Layan Life by Anantara",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7198643",
+      "7262535"
+    ],
+    "channels": {
+      "7198643": "tiktok",
+      "7262535": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0372",
+    "name": "Layan Life By Anantara",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7262556"
+    ],
+    "channels": {
+      "7262556": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0307",
+    "name": "Naladhu Maldives",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7198634"
+    ],
+    "channels": {
+      "7198634": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0047",
+    "name": "Naladhu Private Island Maldives",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4192464",
+      "4192465"
+    ],
+    "channels": {
+      "4192464": "facebook",
+      "4192465": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0332",
+    "name": "Niyama Private Islands",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7215087"
+    ],
+    "channels": {
+      "7215087": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0002",
+    "name": "Niyama Private Islands Maldives",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4132487",
+      "4221530"
+    ],
+    "channels": {
+      "4132487": "facebook",
+      "4221530": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0044",
+    "name": "Qasr Al Sarab Desert Resort by Anantara",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4192365"
+    ],
+    "channels": {
+      "4192365": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0022",
+    "name": "Royal Livingstone by Anantara",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4183046",
+      "7198700"
+    ],
+    "channels": {
+      "4183046": "instagram",
+      "7198700": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0019",
+    "name": "The Royal Livingstone Victoria Falls Zambia Hotel by Anantara",
+    "brand": "AN",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4183041"
+    ],
+    "channels": {
+      "4183041": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0242",
+    "name": "Avani Alonso Martinez Madrid",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6895069"
+    ],
+    "channels": {
+      "6895069": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0213",
+    "name": "Avani Alonso Martínez Madrid",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894333"
+    ],
+    "channels": {
+      "6894333": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0101",
+    "name": "Avani Ao Nang Cliff Krabi Resort",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4247366",
+      "4261125"
+    ],
+    "channels": {
+      "4247366": "facebook",
+      "4261125": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0118",
+    "name": "Avani Auckland Metropolis",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4733732"
+    ],
+    "channels": {
+      "4733732": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0203",
+    "name": "Avani Avenida Liberdade Lisbon",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894238",
+      "6895054"
+    ],
+    "channels": {
+      "6894238": "instagram",
+      "6895054": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0049",
+    "name": "Avani Barbarons Seychelles",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4194834",
+      "4194835",
+      "7192542"
+    ],
+    "channels": {
+      "4194834": "facebook",
+      "4194835": "instagram",
+      "7192542": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0094",
+    "name": "Avani Central Busan Hotel",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4247357"
+    ],
+    "channels": {
+      "4247357": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0138",
+    "name": "Avani Chaweng Samui Hotel & Beach Club",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5297647",
+      "5300495"
+    ],
+    "channels": {
+      "5297647": "facebook",
+      "5300495": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0097",
+    "name": "Avani Deira Dubai",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4247360",
+      "4779157"
+    ],
+    "channels": {
+      "4247360": "facebook",
+      "4779157": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0152",
+    "name": "Avani Fares Maldives Resort",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5656182",
+      "5703985",
+      "7215075"
+    ],
+    "channels": {
+      "5656182": "facebook",
+      "5703985": "instagram",
+      "7215075": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0241",
+    "name": "Avani Frankfurt City",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6895062"
+    ],
+    "channels": {
+      "6895062": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0222",
+    "name": "AVANI FRANKFURT CITY",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894584"
+    ],
+    "channels": {
+      "6894584": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0093",
+    "name": "Avani Gaborone Resort & Casino",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4247355",
+      "6191703",
+      "7207385"
+    ],
+    "channels": {
+      "4247355": "facebook",
+      "6191703": "instagram",
+      "7207385": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0137",
+    "name": "Avani Hotels",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5250373"
+    ],
+    "channels": {
+      "5250373": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0027",
+    "name": "Avani Hotels & Resorts",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4185938",
+      "4185940"
+    ],
+    "channels": {
+      "4185938": "facebook",
+      "4185940": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0113",
+    "name": "Avani Hotels Australia",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4643899",
+      "4733733"
+    ],
+    "channels": {
+      "4643899": "facebook",
+      "4733733": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0111",
+    "name": "Avani Hotels New Zealand",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4643897"
+    ],
+    "channels": {
+      "4643897": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0056",
+    "name": "Avani Hua Hin Resort",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4205593",
+      "4205594",
+      "7211416"
+    ],
+    "channels": {
+      "4205593": "facebook",
+      "4205594": "instagram",
+      "7211416": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0100",
+    "name": "Avani Ibn Battuta Dubai Hotel",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4247365",
+      "5568976"
+    ],
+    "channels": {
+      "4247365": "facebook",
+      "5568976": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0025",
+    "name": "Avani Kalutara Resort",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4183052",
+      "4582185"
+    ],
+    "channels": {
+      "4183052": "facebook",
+      "4582185": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0150",
+    "name": "Avani Khao Lak Resort",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5656101",
+      "5849319",
+      "7192502"
+    ],
+    "channels": {
+      "5656101": "facebook",
+      "5849319": "instagram",
+      "7192502": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0069",
+    "name": "Avani Khon Kaen",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4232135"
+    ],
+    "channels": {
+      "4232135": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0302",
+    "name": "Avani Khon Kaen Hotel",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7192497"
+    ],
+    "channels": {
+      "7192497": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0068",
+    "name": "Avani Khon Kaen Hotel & Convention Centre",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4232131"
+    ],
+    "channels": {
+      "4232131": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0151",
+    "name": "Avani Koh Lanta Krabi Resort",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5656104"
+    ],
+    "channels": {
+      "5656104": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0177",
+    "name": "Avani Lesotho Hotel & Casino",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6233705",
+      "6233708",
+      "7207393"
+    ],
+    "channels": {
+      "6233705": "facebook",
+      "6233708": "instagram",
+      "7207393": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0304",
+    "name": "Avani Luang Prabang",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7192543"
+    ],
+    "channels": {
+      "7192543": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0098",
+    "name": "Avani Luang Prabang Hotel",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4247362",
+      "4779156"
+    ],
+    "channels": {
+      "4247362": "facebook",
+      "4779156": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0080",
+    "name": "Avani Mai Khao Phuket Suites",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234260",
+      "4247351"
+    ],
+    "channels": {
+      "4234260": "instagram",
+      "4247351": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0099",
+    "name": "Avani Maseru",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4247363"
+    ],
+    "channels": {
+      "4247363": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0326",
+    "name": "Avani Maseru Hotel",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7207400"
+    ],
+    "channels": {
+      "7207400": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0153",
+    "name": "Avani Muscat Hotel & Suites",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5656185",
+      "5866577"
+    ],
+    "channels": {
+      "5656185": "facebook",
+      "5866577": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0296",
+    "name": "Avani Museum Quarter Amsterdam Hotel",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7122106",
+      "7175500"
+    ],
+    "channels": {
+      "7122106": "instagram",
+      "7175500": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0209",
+    "name": "Avani Palazzo Moscova Milan",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894324"
+    ],
+    "channels": {
+      "6894324": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0243",
+    "name": "Avani Palazzo Moscova Milano",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6895074"
+    ],
+    "channels": {
+      "6895074": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0323",
+    "name": "Avani Palm View Dubai",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7198775"
+    ],
+    "channels": {
+      "7198775": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0109",
+    "name": "Avani Palm View Dubai Hotel & Suites",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4641783",
+      "4641784"
+    ],
+    "channels": {
+      "4641783": "facebook",
+      "4641784": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0024",
+    "name": "Avani Pattaya Resort",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4183051",
+      "4183055",
+      "7192530"
+    ],
+    "channels": {
+      "4183051": "facebook",
+      "4183055": "instagram",
+      "7192530": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0031",
+    "name": "Avani Pemba Beach",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4190229",
+      "4190230"
+    ],
+    "channels": {
+      "4190229": "facebook",
+      "4190230": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0325",
+    "name": "Avani Pemba Beach Hotel",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7207381"
+    ],
+    "channels": {
+      "7207381": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0055",
+    "name": "Avani Quy Nhon Resort",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4205573",
+      "4205574",
+      "7192509"
+    ],
+    "channels": {
+      "4205573": "facebook",
+      "4205574": "instagram",
+      "7192509": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0303",
+    "name": "Avani Ratchada Bangkok",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7192501"
+    ],
+    "channels": {
+      "7192501": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0184",
+    "name": "Avani Ratchada Bangkok Hotel",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6644915",
+      "6644921"
+    ],
+    "channels": {
+      "6644915": "facebook",
+      "6644921": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0210",
+    "name": "Avani Rio Novo Venice",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894327",
+      "6895111"
+    ],
+    "channels": {
+      "6894327": "instagram",
+      "6895111": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0065",
+    "name": "Avani Riverside Bangkok Hotel",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4224321",
+      "4224323",
+      "7192624"
+    ],
+    "channels": {
+      "4224321": "facebook",
+      "4224323": "instagram",
+      "7192624": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0095",
+    "name": "Avani Samui Resort",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4247358",
+      "4263414"
+    ],
+    "channels": {
+      "4247358": "facebook",
+      "4263414": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0057",
+    "name": "Avani Seminyak Bali Resort",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4214289",
+      "4214291"
+    ],
+    "channels": {
+      "4214289": "facebook",
+      "4214291": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0180",
+    "name": "Avani Sepang Goldcoast Resort",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6461272"
+    ],
+    "channels": {
+      "6461272": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0091",
+    "name": "Avani Sukhumvit Bangkok Hotel",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4247127",
+      "4251857",
+      "7198628"
+    ],
+    "channels": {
+      "4247127": "facebook",
+      "4251857": "instagram",
+      "7198628": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0026",
+    "name": "Avani Victoria Falls Resort",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4183053",
+      "4183057",
+      "7207405"
+    ],
+    "channels": {
+      "4183053": "facebook",
+      "4183057": "instagram",
+      "7207405": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0163",
+    "name": "Avani Well",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6120761"
+    ],
+    "channels": {
+      "6120761": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0096",
+    "name": "Avani Windhoek Hotel & Casino",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4247359",
+      "7198618"
+    ],
+    "channels": {
+      "4247359": "facebook",
+      "7198618": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0308",
+    "name": "avaniaonangcliffkrabi",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7198635"
+    ],
+    "channels": {
+      "7198635": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0310",
+    "name": "avanichawengsamui",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7198637"
+    ],
+    "channels": {
+      "7198637": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0305",
+    "name": "avaniibnbattutadubai",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7192548"
+    ],
+    "channels": {
+      "7192548": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0306",
+    "name": "avanikalutara",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7192549"
+    ],
+    "channels": {
+      "7192549": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0309",
+    "name": "avanikohlanta",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7198636"
+    ],
+    "channels": {
+      "7198636": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0166",
+    "name": "AvaniWell",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6120766"
+    ],
+    "channels": {
+      "6120766": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0089",
+    "name": "FCC Angkor by Avani",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4237149",
+      "4487579",
+      "7211408"
+    ],
+    "channels": {
+      "4237149": "facebook",
+      "4487579": "instagram",
+      "7211408": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0103",
+    "name": "Skyline at Avani Riverside Bangkok Hotel",
+    "brand": "AV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4469278"
+    ],
+    "channels": {
+      "4469278": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0282",
+    "name": "Hotel NH Collection Palacio de Castellanos",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6979977"
+    ],
+    "channels": {
+      "6979977": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0232",
+    "name": "NH Collection",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894980",
+      "6895124",
+      "6895136",
+      "6896632",
+      "6896636"
+    ],
+    "channels": {
+      "6894980": "instagram",
+      "6895124": "facebook",
+      "6895136": "facebook",
+      "6896632": "facebook",
+      "6896636": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0228",
+    "name": "NH Collection América",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894648"
+    ],
+    "channels": {
+      "6894648": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0244",
+    "name": "NH Collection Barcelona Gran Hotel Calderón",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6896628"
+    ],
+    "channels": {
+      "6896628": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0407",
+    "name": "NH Collection Brasil",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7508145"
+    ],
+    "channels": {
+      "7508145": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0345",
+    "name": "NH Collection Colombo",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7220402",
+      "7270289",
+      "7423064"
+    ],
+    "channels": {
+      "7220402": "instagram",
+      "7270289": "tiktok",
+      "7423064": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0238",
+    "name": "NH Collection Copenhagen",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6895020",
+      "6896629"
+    ],
+    "channels": {
+      "6895020": "instagram",
+      "6896629": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0148",
+    "name": "NH Collection Dubai The Palm",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5635722",
+      "5640430"
+    ],
+    "channels": {
+      "5635722": "facebook",
+      "5640430": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0233",
+    "name": "NH Collection España",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894985"
+    ],
+    "channels": {
+      "6894985": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0409",
+    "name": "NH Collection Fori Imperiali",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7508377"
+    ],
+    "channels": {
+      "7508377": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0195",
+    "name": "NH Collection GH Calderón",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894202"
+    ],
+    "channels": {
+      "6894202": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0226",
+    "name": "NH Collection Helsinki Grand Hansa",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894610"
+    ],
+    "channels": {
+      "6894610": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0246",
+    "name": "NH Collection Helsinki Grand Hansa Hotel",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6896639"
+    ],
+    "channels": {
+      "6896639": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0341",
+    "name": "NH Collection Hotels & Resorts",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7218337"
+    ],
+    "channels": {
+      "7218337": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0234",
+    "name": "NH Collection Hotels DE, AT & CH",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894994"
+    ],
+    "channels": {
+      "6894994": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0290",
+    "name": "NH Collection Ibiza",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7067229"
+    ],
+    "channels": {
+      "7067229": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0245",
+    "name": "NH Collection Madrid Eurobuilding",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6896638"
+    ],
+    "channels": {
+      "6896638": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0192",
+    "name": "NH COLLECTION MADRID EUROBUILDING",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894123"
+    ],
+    "channels": {
+      "6894123": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0194",
+    "name": "NH Collection Madrid Suecia",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894201",
+      "6895148"
+    ],
+    "channels": {
+      "6894201": "instagram",
+      "6895148": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0377",
+    "name": "NH Collection Maldives Havodda",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7268119"
+    ],
+    "channels": {
+      "7268119": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0158",
+    "name": "NH Collection Maldives Havodda Resort",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5918273",
+      "5956358"
+    ],
+    "channels": {
+      "5918273": "instagram",
+      "5956358": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0347",
+    "name": "NH Collection Maldives Reethi Resort",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7220405",
+      "7423062"
+    ],
+    "channels": {
+      "7220405": "instagram",
+      "7423062": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0207",
+    "name": "NH Collection Milano Citylife",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894313"
+    ],
+    "channels": {
+      "6894313": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0247",
+    "name": "NH Collection Milano CityLife",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6896644"
+    ],
+    "channels": {
+      "6896644": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0206",
+    "name": "NH Collection Milano President",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894245"
+    ],
+    "channels": {
+      "6894245": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0193",
+    "name": "NH Collection New York Madison Avenue",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894165",
+      "6896640"
+    ],
+    "channels": {
+      "6894165": "instagram",
+      "6896640": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0346",
+    "name": "NH Collection Oasis Doha Hotel",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7220403"
+    ],
+    "channels": {
+      "7220403": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0230",
+    "name": "NH Collection Olomouc Congress hotel",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894864"
+    ],
+    "channels": {
+      "6894864": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0411",
+    "name": "NH Collection Palazzo Cinquecento",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7508382"
+    ],
+    "channels": {
+      "7508382": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0386",
+    "name": "NH Collection Palazzo Verona",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7281498",
+      "7281511"
+    ],
+    "channels": {
+      "7281498": "instagram",
+      "7281511": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0281",
+    "name": "NH Collection Porto Batalha",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6979976"
+    ],
+    "channels": {
+      "6979976": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0227",
+    "name": "NH Collection Prague Carlo IV",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894638",
+      "6896649"
+    ],
+    "channels": {
+      "6894638": "instagram",
+      "6896649": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0278",
+    "name": "Nh Collection Punto Sao Paulo",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6979973"
+    ],
+    "channels": {
+      "6979973": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0414",
+    "name": "NH Collection Roma Centro",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7508407",
+      "7508411"
+    ],
+    "channels": {
+      "7508407": "instagram",
+      "7508411": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0410",
+    "name": "NH Collection Roma Fori Imperiali",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7508381"
+    ],
+    "channels": {
+      "7508381": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0412",
+    "name": "NH Collection Roma Palazzo Cinquecento",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7508383"
+    ],
+    "channels": {
+      "7508383": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0337",
+    "name": "NH Collection Samui Peace",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7217053"
+    ],
+    "channels": {
+      "7217053": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0344",
+    "name": "NH Collection Samui Peace Resort",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7220401",
+      "7220404"
+    ],
+    "channels": {
+      "7220401": "facebook",
+      "7220404": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0279",
+    "name": "NH Collection Santiago",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6979974"
+    ],
+    "channels": {
+      "6979974": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0277",
+    "name": "NH Collection Torino Piazza Carlina",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6979972"
+    ],
+    "channels": {
+      "6979972": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0208",
+    "name": "NH Collection Venezia Grand Hotel Palazzo dei Dogi",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894317",
+      "6896635"
+    ],
+    "channels": {
+      "6894317": "instagram",
+      "6896635": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0283",
+    "name": "NH Collection Vigo",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6979978"
+    ],
+    "channels": {
+      "6979978": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0280",
+    "name": "NH Collection Villa De Bilbao",
+    "brand": "NC",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6979975"
+    ],
+    "channels": {
+      "6979975": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0275",
+    "name": "Hotel NH Iruña Park",
     "brand": "NH",
-    "region": "Europe",
-    "country": "PT",
-    "profile_ids": ["6896704", "6894233"],
-    "channels": { "6896704": "facebook", "6894233": "instagram" }
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6977662"
+    ],
+    "channels": {
+      "6977662": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0328",
+    "name": "NH Bangkok Asoke",
+    "brand": "NH",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7213282",
+      "7220407",
+      "7275809"
+    ],
+    "channels": {
+      "7213282": "facebook",
+      "7220407": "instagram",
+      "7275809": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0329",
+    "name": "NH Bangkok Sukhumvit Boulevard",
+    "brand": "NH",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7213283",
+      "7220408",
+      "7234840"
+    ],
+    "channels": {
+      "7213283": "facebook",
+      "7220408": "instagram",
+      "7234840": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0379",
+    "name": "NH Bentota Ceysands Resort",
+    "brand": "NH",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7270238",
+      "7425093",
+      "7435845"
+    ],
+    "channels": {
+      "7270238": "tiktok",
+      "7425093": "facebook",
+      "7435845": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0154",
+    "name": "NH Boat Lagoon Phuket Resort",
+    "brand": "NH",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5703956",
+      "5703957",
+      "7252250"
+    ],
+    "channels": {
+      "5703956": "facebook",
+      "5703957": "instagram",
+      "7252250": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0297",
+    "name": "NH Copenhagen Grand Joanne",
+    "brand": "NH",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7133184",
+      "7136835"
+    ],
+    "channels": {
+      "7133184": "instagram",
+      "7136835": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0231",
+    "name": "NH Hotels",
+    "brand": "NH",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894932",
+      "6895128",
+      "6977827",
+      "6977840",
+      "6977843",
+      "6977848",
+      "6977851",
+      "6977852",
+      "6977854",
+      "6977855",
+      "6977863",
+      "6977869"
+    ],
+    "channels": {
+      "6894932": "instagram",
+      "6895128": "facebook",
+      "6977827": "facebook",
+      "6977840": "facebook",
+      "6977843": "facebook",
+      "6977848": "facebook",
+      "6977851": "facebook",
+      "6977852": "facebook",
+      "6977854": "facebook",
+      "6977855": "facebook",
+      "6977863": "facebook",
+      "6977869": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0340",
+    "name": "NH Hotels & Resorts",
+    "brand": "NH",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7218336",
+      "7405617"
+    ],
+    "channels": {
+      "7218336": "tiktok",
+      "7405617": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0276",
+    "name": "NH Hotels Brasil",
+    "brand": "NH",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6977663"
+    ],
+    "channels": {
+      "6977663": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0400",
+    "name": "NH Hua Hin",
+    "brand": "NH",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7488078"
+    ],
+    "channels": {
+      "7488078": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0183",
+    "name": "NH Johannesburg Sandton",
+    "brand": "NH",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6622554",
+      "6622556",
+      "7207410"
+    ],
+    "channels": {
+      "6622554": "facebook",
+      "6622556": "instagram",
+      "7207410": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0185",
+    "name": "NH Maldives Kuda Rah Resort",
+    "brand": "NH",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6644942",
+      "6644949"
+    ],
+    "channels": {
+      "6644942": "facebook",
+      "6644949": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0274",
+    "name": "NH Venezia Santa Lucia",
+    "brand": "NH",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6977661"
+    ],
+    "channels": {
+      "6977661": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0237",
+    "name": "nhow",
+    "brand": "NW",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6895016",
+      "7205862"
+    ],
+    "channels": {
+      "6895016": "facebook",
+      "7205862": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0223",
+    "name": "nhow Amsterdam RAI",
+    "brand": "NW",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894594",
+      "6896650"
+    ],
+    "channels": {
+      "6894594": "instagram",
+      "6896650": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0216",
+    "name": "nhow Berlin",
+    "brand": "NW",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894359"
+    ],
+    "channels": {
+      "6894359": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0250",
+    "name": "nhow Brussels",
+    "brand": "NW",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6896653"
+    ],
+    "channels": {
+      "6896653": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0224",
+    "name": "nhow Brussels hotel",
+    "brand": "NW",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894600"
+    ],
+    "channels": {
+      "6894600": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0251",
+    "name": "nhow Frankfurt",
+    "brand": "NW",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6896656"
+    ],
+    "channels": {
+      "6896656": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0236",
+    "name": "nhow hotels",
+    "brand": "NW",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6895007"
+    ],
+    "channels": {
+      "6895007": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0272",
+    "name": "nhow Lima",
+    "brand": "NW",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6976267"
+    ],
+    "channels": {
+      "6976267": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0215",
+    "name": "nhow London",
+    "brand": "NW",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894352",
+      "6896660"
+    ],
+    "channels": {
+      "6894352": "instagram",
+      "6896660": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0253",
+    "name": "nhow Marseille",
+    "brand": "NW",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6896673"
+    ],
+    "channels": {
+      "6896673": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0212",
+    "name": "Nhow Marseille",
+    "brand": "NW",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894331"
+    ],
+    "channels": {
+      "6894331": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0211",
+    "name": "nhow Milano",
+    "brand": "NW",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894330",
+      "6896670"
+    ],
+    "channels": {
+      "6894330": "instagram",
+      "6896670": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0240",
+    "name": "nhow Roma",
+    "brand": "NW",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6895058"
+    ],
+    "channels": {
+      "6895058": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0298",
+    "name": "nhow Rotterdam",
+    "brand": "NW",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7136722",
+      "7136723"
+    ],
+    "channels": {
+      "7136722": "instagram",
+      "7136723": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0249",
+    "name": "nhow_Berlin",
+    "brand": "NW",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6896652"
+    ],
+    "channels": {
+      "6896652": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0225",
+    "name": "nhowfrankfurt",
+    "brand": "NW",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894606"
+    ],
+    "channels": {
+      "6894606": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0221",
+    "name": "nhowroma",
+    "brand": "NW",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894578"
+    ],
+    "channels": {
+      "6894578": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0039",
+    "name": "Al Najada Apartments by Oaks",
+    "brand": "OA",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4190501"
+    ],
+    "channels": {
+      "4190501": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0038",
+    "name": "Al Najada Hotel Apartments by Oaks",
+    "brand": "OA",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4190500"
+    ],
+    "channels": {
+      "4190500": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0291",
+    "name": "OAKS Bar",
+    "brand": "OA",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7082270"
+    ],
+    "channels": {
+      "7082270": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0133",
+    "name": "Oaks Casuarina Santai Resort",
+    "brand": "OA",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4851812",
+      "4851816"
+    ],
+    "channels": {
+      "4851812": "facebook",
+      "4851816": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0114",
+    "name": "Oaks Cypress Lakes Resort",
+    "brand": "OA",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4643900"
+    ],
+    "channels": {
+      "4643900": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0292",
+    "name": "Oaks Frankfurt",
+    "brand": "OA",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7082273"
+    ],
+    "channels": {
+      "7082273": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0110",
+    "name": "Oaks Hotels",
+    "brand": "OA",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4643895"
+    ],
+    "channels": {
+      "4643895": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0119",
+    "name": "Oaks Hotels, Resorts & Suites",
+    "brand": "OA",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4733734"
+    ],
+    "channels": {
+      "4733734": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0126",
+    "name": "Oaks Ibn Battuta Gate Dubai",
+    "brand": "OA",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4779174"
+    ],
+    "channels": {
+      "4779174": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0127",
+    "name": "Oaks Ibn Battuta Gate Hotel",
+    "brand": "OA",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4779175"
+    ],
+    "channels": {
+      "4779175": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0132",
+    "name": "Oaks Meetings & Events",
+    "brand": "OA",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4813028"
+    ],
+    "channels": {
+      "4813028": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0271",
+    "name": "",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6976253",
+      "7067225",
+      "7265390",
+      "7415072"
+    ],
+    "channels": {
+      "6976253": "instagram",
+      "7067225": "instagram",
+      "7265390": "instagram",
+      "7415072": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0299",
+    "name": "1638 by Nacho Manzano",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7142010"
+    ],
+    "channels": {
+      "7142010": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0300",
+    "name": "1638 Restaurant & Wine Bar by Nacho Manzano",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7142013"
+    ],
+    "channels": {
+      "7142013": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0363",
+    "name": "1921 House",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7262529"
+    ],
+    "channels": {
+      "7262529": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0399",
+    "name": "Adriatic Istria Resort",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7480285",
+      "7480289"
+    ],
+    "channels": {
+      "7480285": "instagram",
+      "7480289": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0374",
+    "name": "Adventure Park Doha",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7265393"
+    ],
+    "channels": {
+      "7265393": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0376",
+    "name": "adventureparkdoha",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7267312"
+    ],
+    "channels": {
+      "7267312": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0159",
+    "name": "Age Restaurant Phuket",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6002617",
+      "6005846"
+    ],
+    "channels": {
+      "6002617": "facebook",
+      "6005846": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0391",
+    "name": "Al Baleed Resort Salalah",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7379766"
+    ],
+    "channels": {
+      "7379766": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0365",
+    "name": "Al Mina Salalah",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7262531",
+      "7262545"
+    ],
+    "channels": {
+      "7262531": "facebook",
+      "7262545": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0009",
+    "name": "AQUA",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4145956"
+    ],
+    "channels": {
+      "4145956": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0006",
+    "name": "AQUA Bar",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4145951"
+    ],
+    "channels": {
+      "4145951": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0375",
+    "name": "Banana Island Adventure Park",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7265395"
+    ],
+    "channels": {
+      "7265395": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0037",
+    "name": "Banana Island Resort Doha",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4190494",
+      "5633667"
+    ],
+    "channels": {
+      "4190494": "instagram",
+      "5633667": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0164",
+    "name": "Bangkok LIFE Longevity & Biohacking Hub",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6120762",
+      "6120767"
+    ],
+    "channels": {
+      "6120762": "facebook",
+      "6120767": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0050",
+    "name": "Bangkok Riverside Fest",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4205256",
+      "5459056"
+    ],
+    "channels": {
+      "4205256": "instagram",
+      "5459056": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0220",
+    "name": "Beach Club Portopiccolo",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894388"
+    ],
+    "channels": {
+      "6894388": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0362",
+    "name": "Beach House Layan",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7262528",
+      "7262549"
+    ],
+    "channels": {
+      "7262528": "facebook",
+      "7262549": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0104",
+    "name": "Benihana Riverside",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4469279",
+      "4469282"
+    ],
+    "channels": {
+      "4469279": "facebook",
+      "4469282": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0052",
+    "name": "Best Beach Resort Koh Phangan",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4205467"
+    ],
+    "channels": {
+      "4205467": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0371",
+    "name": "Bill Bentley Pub",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7262550"
+    ],
+    "channels": {
+      "7262550": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0368",
+    "name": "Bill Bentley Pub at Turtle Village",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7262534"
+    ],
+    "channels": {
+      "7262534": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0008",
+    "name": "biscotti",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4145955"
+    ],
+    "channels": {
+      "4145955": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0005",
+    "name": "Biscotti",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4145950"
+    ],
+    "channels": {
+      "4145950": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0401",
+    "name": "BPM Bar Berlin",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7490458",
+      "7490464"
+    ],
+    "channels": {
+      "7490458": "instagram",
+      "7490464": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0287",
+    "name": "Brasserie Sophie",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7051297",
+      "7051303"
+    ],
+    "channels": {
+      "7051297": "instagram",
+      "7051303": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0115",
+    "name": "Bushman's Restaurant & Bar",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4688475",
+      "5918223"
+    ],
+    "channels": {
+      "4688475": "instagram",
+      "5918223": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0173",
+    "name": "Cafe Wolseley Bangkok",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6184696"
+    ],
+    "channels": {
+      "6184696": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0174",
+    "name": "Café Wolseley Bangkok",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6184699"
+    ],
+    "channels": {
+      "6184699": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0339",
+    "name": "Casino de Madrid",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7218328"
+    ],
+    "channels": {
+      "7218328": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0338",
+    "name": "Casino de Madrid & Paco Roncero Catering",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7218326"
+    ],
+    "channels": {
+      "7218326": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0258",
+    "name": "Cervejaria Liberdade",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6904050",
+      "6904100"
+    ],
+    "channels": {
+      "6904050": "instagram",
+      "6904100": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0366",
+    "name": "Claws & Co Phuket",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7262532",
+      "7262551"
+    ],
+    "channels": {
+      "7262532": "facebook",
+      "7262551": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0143",
+    "name": "Club SEEN Koh Samui",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5440306"
+    ],
+    "channels": {
+      "5440306": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0142",
+    "name": "CLUB SEEN Koh Samui",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5440287"
+    ],
+    "channels": {
+      "5440287": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0360",
+    "name": "Clube Naval",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7262526"
+    ],
+    "channels": {
+      "7262526": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0370",
+    "name": "Clube Naval Restaurant",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7262548"
+    ],
+    "channels": {
+      "7262548": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0361",
+    "name": "Dara Cuisine Phuket",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7262527"
+    ],
+    "channels": {
+      "7262527": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0239",
+    "name": "Edvard",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6895046"
+    ],
+    "channels": {
+      "6895046": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0293",
+    "name": "EDVARD Vienna",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7105484"
+    ],
+    "channels": {
+      "7105484": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0263",
+    "name": "Elvy Gastrobar",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6904239",
+      "6904264"
+    ],
+    "channels": {
+      "6904239": "instagram",
+      "6904264": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0112",
+    "name": "Elysia Wellness Retreat",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4643898",
+      "4733731"
+    ],
+    "channels": {
+      "4643898": "facebook",
+      "4733731": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0406",
+    "name": "Five Lounge",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7508144"
+    ],
+    "channels": {
+      "7508144": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0172",
+    "name": "Forbes Street by Gareth Mullins",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6156946",
+      "6156954"
+    ],
+    "channels": {
+      "6156946": "facebook",
+      "6156954": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0219",
+    "name": "Glee Boutique Café",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894372",
+      "6895120"
+    ],
+    "channels": {
+      "6894372": "instagram",
+      "6895120": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0382",
+    "name": "Groove Restaurant & Bar Indonesian & International Cuisine",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7270293"
+    ],
+    "channels": {
+      "7270293": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0381",
+    "name": "Groove Seminyak",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7270292"
+    ],
+    "channels": {
+      "7270292": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0284",
+    "name": "Guilty Bangkok",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7008032",
+      "7008034",
+      "7323002"
+    ],
+    "channels": {
+      "7008032": "instagram",
+      "7008034": "facebook",
+      "7323002": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0388",
+    "name": "guiltysamui",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7312030"
+    ],
+    "channels": {
+      "7312030": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0402",
+    "name": "Hotel Palace Portorož",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7491051",
+      "7491060"
+    ],
+    "channels": {
+      "7491051": "instagram",
+      "7491060": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0393",
+    "name": "iStay Hotels",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7415090",
+      "7415101"
+    ],
+    "channels": {
+      "7415090": "facebook",
+      "7415101": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0321",
+    "name": "La Suite Dubai Hotel",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7198702"
+    ],
+    "channels": {
+      "7198702": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0149",
+    "name": "La Suite Dubai Hotel & Apartments",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5635733",
+      "5635747"
+    ],
+    "channels": {
+      "5635733": "facebook",
+      "5635747": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0369",
+    "name": "Longtail River Bar and Lounge",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7262536",
+      "7262552"
+    ],
+    "channels": {
+      "7262536": "facebook",
+      "7262552": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0367",
+    "name": "Loy Pela Voyages",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7262533",
+      "7262554"
+    ],
+    "channels": {
+      "7262533": "facebook",
+      "7262554": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0289",
+    "name": "Mad Bar & Lounge",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7063254"
+    ],
+    "channels": {
+      "7063254": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0288",
+    "name": "MAD Bar & Lounge",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7063250"
+    ],
+    "channels": {
+      "7063250": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0004",
+    "name": "Madison Steak Avenue",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4144059",
+      "4610593"
+    ],
+    "channels": {
+      "4144059": "facebook",
+      "4610593": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0106",
+    "name": "Manohra Cruises",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4469281",
+      "4469284"
+    ],
+    "channels": {
+      "4469281": "facebook",
+      "4469284": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0116",
+    "name": "Mekong Dubai",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4688477",
+      "5918222"
+    ],
+    "channels": {
+      "4688477": "instagram",
+      "5918222": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0190",
+    "name": "Mekong Ras Al Khaimah",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6872553",
+      "6872559"
+    ],
+    "channels": {
+      "6872553": "facebook",
+      "6872559": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0189",
+    "name": "Mekong Salalah",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6872547",
+      "6872550"
+    ],
+    "channels": {
+      "6872547": "facebook",
+      "6872550": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0090",
+    "name": "Minor Hotels",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4247026",
+      "6913812"
+    ],
+    "channels": {
+      "4247026": "facebook",
+      "6913812": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0155",
+    "name": "Minor Hotels Careers",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5745827"
+    ],
+    "channels": {
+      "5745827": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0157",
+    "name": "Minor International",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5746241",
+      "5746244"
+    ],
+    "channels": {
+      "5746241": "instagram",
+      "5746244": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0264",
+    "name": "minorhotels",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6909538"
+    ],
+    "channels": {
+      "6909538": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0007",
+    "name": "Mocha & Muffins",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4145952",
+      "4145954"
+    ],
+    "channels": {
+      "4145952": "facebook",
+      "4145954": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0389",
+    "name": "Mocha & Muffins Bangkok",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7323007"
+    ],
+    "channels": {
+      "7323007": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0131",
+    "name": "Must",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4782830"
+    ],
+    "channels": {
+      "4782830": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0129",
+    "name": "Must Restaurant",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4782828"
+    ],
+    "channels": {
+      "4782828": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0265",
+    "name": "NFT SKYBAR",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6924408"
+    ],
+    "channels": {
+      "6924408": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0266",
+    "name": "NFT Skybar Restaurant",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6924412"
+    ],
+    "channels": {
+      "6924412": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0378",
+    "name": "NHCollectionDubaiThePalm",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7268350"
+    ],
+    "channels": {
+      "7268350": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0353",
+    "name": "nhcollectionmaldivesreethi",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7231828"
+    ],
+    "channels": {
+      "7231828": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0336",
+    "name": "nhmaldiveskudarah",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7216949"
+    ],
+    "channels": {
+      "7216949": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0121",
+    "name": "Oak & Vine",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4776942"
+    ],
+    "channels": {
+      "4776942": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0120",
+    "name": "Oak & Vine Restaurant",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4776840"
+    ],
+    "channels": {
+      "4776840": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0218",
+    "name": "Pepper's Vilamoura",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894370",
+      "6895143"
+    ],
+    "channels": {
+      "6894370": "instagram",
+      "6895143": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0413",
+    "name": "Porta Rossa Hotel Firenze, Colbert Collection",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7508389",
+      "7508393"
+    ],
+    "channels": {
+      "7508389": "instagram",
+      "7508393": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0254",
+    "name": "Portopiccolo Beach Club",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6896694"
+    ],
+    "channels": {
+      "6896694": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0214",
+    "name": "Purobeach Vilamoura",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894341",
+      "6895060"
+    ],
+    "channels": {
+      "6894341": "instagram",
+      "6895060": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0408",
+    "name": "Restaurante Trinitas",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7508146"
+    ],
+    "channels": {
+      "7508146": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0270",
+    "name": "ROOF - Bar & Lounge",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6962282",
+      "6984381"
+    ],
+    "channels": {
+      "6962282": "facebook",
+      "6984381": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0373",
+    "name": "Sala Lakorn",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7265389"
+    ],
+    "channels": {
+      "7265389": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0186",
+    "name": "Scribe Bar",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6769017",
+      "6769031"
+    ],
+    "channels": {
+      "6769017": "instagram",
+      "6769031": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0385",
+    "name": "Sea Fire Salt",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7273553"
+    ],
+    "channels": {
+      "7273553": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0364",
+    "name": "Sea Fire Salt Hua Hin",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7262530",
+      "7262553"
+    ],
+    "channels": {
+      "7262530": "facebook",
+      "7262553": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0384",
+    "name": "Sea Fire Salt Phuket",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7273551"
+    ],
+    "channels": {
+      "7273551": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0403",
+    "name": "Seen Belém",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7501760"
+    ],
+    "channels": {
+      "7501760": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0259",
+    "name": "SEEN by Olivier - Lisboa",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6904126"
+    ],
+    "channels": {
+      "6904126": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0130",
+    "name": "SEEN by Olivier São Paulo",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4782829"
+    ],
+    "channels": {
+      "4782829": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0405",
+    "name": "Seen Feira de Santana",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7508141"
+    ],
+    "channels": {
+      "7508141": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0261",
+    "name": "SEEN Lisboa",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6904159"
+    ],
+    "channels": {
+      "6904159": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0128",
+    "name": "Seen São Paulo",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4782827"
+    ],
+    "channels": {
+      "4782827": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0260",
+    "name": "SEEN Sky Bar - Lisboa",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6904144"
+    ],
+    "channels": {
+      "6904144": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0262",
+    "name": "SEEN Sky Bar Lisboa",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6904173"
+    ],
+    "channels": {
+      "6904173": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0269",
+    "name": "Selva",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6924438"
+    ],
+    "channels": {
+      "6924438": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0108",
+    "name": "Shintaro",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4641716",
+      "4641718"
+    ],
+    "channels": {
+      "4641716": "facebook",
+      "4641718": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0012",
+    "name": "Sir Bani Yas Island Resorts",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4183005"
+    ],
+    "channels": {
+      "4183005": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0301",
+    "name": "Sky Bar Kopke",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7142016",
+      "7142017"
+    ],
+    "channels": {
+      "7142016": "instagram",
+      "7142017": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0267",
+    "name": "Sonora",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6924427"
+    ],
+    "channels": {
+      "6924427": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0268",
+    "name": "Sonora Amsterdam",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6924437"
+    ],
+    "channels": {
+      "6924437": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0041",
+    "name": "Souq Waqif Boutique Hotels",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4190541",
+      "7215342"
+    ],
+    "channels": {
+      "4190541": "instagram",
+      "7215342": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0107",
+    "name": "Spice & Barley Riverside",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4469283"
+    ],
+    "channels": {
+      "4469283": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0105",
+    "name": "Spice & Barley Riverside Bangkok",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4469280"
+    ],
+    "channels": {
+      "4469280": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0083",
+    "name": "Spice Market",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234441",
+      "4234444"
+    ],
+    "channels": {
+      "4234441": "facebook",
+      "4234444": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0229",
+    "name": "Talent at Minor Hotels Europe & Americas",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894858"
+    ],
+    "channels": {
+      "6894858": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0156",
+    "name": "TalentAtMinorHotels",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "5746214"
+    ],
+    "channels": {
+      "5746214": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0217",
+    "name": "The Argo Cocktail Bar",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894367",
+      "6896674"
+    ],
+    "channels": {
+      "6894367": "instagram",
+      "6896674": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0117",
+    "name": "The Beach House",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4692952",
+      "5918221"
+    ],
+    "channels": {
+      "4692952": "instagram",
+      "5918221": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0188",
+    "name": "The Mansion",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6787013"
+    ],
+    "channels": {
+      "6787013": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0187",
+    "name": "The Mansion Restaurant",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6784739"
+    ],
+    "channels": {
+      "6784739": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0058",
+    "name": "The Mora Sahara Tozeur",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4221143",
+      "4221146"
+    ],
+    "channels": {
+      "4221143": "facebook",
+      "4221146": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0390",
+    "name": "The Rooftop Bar & Terrace",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7364527",
+      "7364538"
+    ],
+    "channels": {
+      "7364527": "instagram",
+      "7364538": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0396",
+    "name": "The Wolseley Hotels",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7476579",
+      "7476581",
+      "7476583"
+    ],
+    "channels": {
+      "7476579": "instagram",
+      "7476581": "facebook",
+      "7476583": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0286",
+    "name": "Theo’s Lounge & Bar",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7051290"
+    ],
+    "channels": {
+      "7051290": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0285",
+    "name": "THEO’S Lounge & Bar Vienna",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7051270"
+    ],
+    "channels": {
+      "7051270": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0359",
+    "name": "Trader Vic's Bangkok",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7262525",
+      "7262546"
+    ],
+    "channels": {
+      "7262525": "facebook",
+      "7262546": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0088",
+    "name": "Victoria Golf Resort & Spa",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234465"
+    ],
+    "channels": {
+      "4234465": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0076",
+    "name": "Victoria Golf Resort & Spa, Managed by Accor",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234254"
+    ],
+    "channels": {
+      "4234254": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0162",
+    "name": "VIVID Bangkok Siam",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6120760",
+      "6120765"
+    ],
+    "channels": {
+      "6120760": "facebook",
+      "6120765": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0165",
+    "name": "Vivid by Verita",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6120763",
+      "6120764"
+    ],
+    "channels": {
+      "6120763": "facebook",
+      "6120764": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0358",
+    "name": "VIVID Phuket Mai Khao",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7262524",
+      "7262555"
+    ],
+    "channels": {
+      "7262524": "facebook",
+      "7262555": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0084",
+    "name": "World Gourmet Festival Bangkok",
+    "brand": "OT",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4234449",
+      "4234451"
+    ],
+    "channels": {
+      "4234449": "facebook",
+      "4234451": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0042",
+    "name": "Al Najada Hotel by Tivoli",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4190546",
+      "4190547"
+    ],
+    "channels": {
+      "4190546": "facebook",
+      "4190547": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0334",
+    "name": "Souq Al Wakra Hotel by Tivoli",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7215333"
+    ],
+    "channels": {
+      "7215333": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0034",
+    "name": "Souq Al Wakra Hotel Qatar By Tivoli",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4190481"
+    ],
+    "channels": {
+      "4190481": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0035",
+    "name": "Souq Al Wakra Hotel Tivoli",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4190484"
+    ],
+    "channels": {
+      "4190484": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0040",
+    "name": "Souq Waqif Boutique Hotels by Tivoli",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4190540"
+    ],
+    "channels": {
+      "4190540": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0252",
+    "name": "Tivoli Alvor",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6896663"
+    ],
+    "channels": {
+      "6896663": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0205",
+    "name": "Tivoli Alvor Algarve Resort",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894241"
+    ],
+    "channels": {
+      "6894241": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0202",
+    "name": "Tivoli Avenida Liberdade",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894233"
+    ],
+    "channels": {
+      "6894233": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0256",
+    "name": "Tivoli Avenida Liberdade Lisboa",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6896704"
+    ],
+    "channels": {
+      "6896704": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0255",
+    "name": "Tivoli Carvoeiro",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6896698"
+    ],
+    "channels": {
+      "6896698": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0204",
+    "name": "Tivoli Carvoeiro Algarve Resort",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894239"
+    ],
+    "channels": {
+      "6894239": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0201",
+    "name": "Tivoli Doelen Amsterdam",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894230",
+      "6896665",
+      "7194744"
+    ],
+    "channels": {
+      "6894230": "instagram",
+      "6896665": "facebook",
+      "7194744": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0123",
+    "name": "Tivoli Ecoresort Praia do Forte",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4779161",
+      "4779173"
+    ],
+    "channels": {
+      "4779161": "facebook",
+      "4779173": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0324",
+    "name": "Tivoli Estela Golf & Lodges",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7201814",
+      "7201820"
+    ],
+    "channels": {
+      "7201814": "instagram",
+      "7201820": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0235",
+    "name": "Tivoli Hotels & Resorts",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6895004",
+      "6896668"
+    ],
+    "channels": {
+      "6895004": "instagram",
+      "6896668": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0342",
+    "name": "Tivoli Hotels and Resorts",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7218338"
+    ],
+    "channels": {
+      "7218338": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0294",
+    "name": "Tivoli Kopke Porto Gaia",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7106037"
+    ],
+    "channels": {
+      "7106037": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0295",
+    "name": "Tivoli Kopke Porto Gaia Hotel",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7106048"
+    ],
+    "channels": {
+      "7106048": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0198",
+    "name": "Tivoli La Caleta Tenerife Resort",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894211",
+      "6896711"
+    ],
+    "channels": {
+      "6894211": "instagram",
+      "6896711": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0398",
+    "name": "Tivoli La Vie Muscat Hotel",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7478369"
+    ],
+    "channels": {
+      "7478369": "tiktok"
+    }
+  },
+  {
+    "hotel_id": "sprout_0395",
+    "name": "Tivoli La Vie Muscat Hotel & Residences",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7434230"
+    ],
+    "channels": {
+      "7434230": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0397",
+    "name": "Tivoli LA VIE Muscat Hotel & Residences",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7478368"
+    ],
+    "channels": {
+      "7478368": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0404",
+    "name": "Tivoli Maiorana Belém Pará",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7508128"
+    ],
+    "channels": {
+      "7508128": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0197",
+    "name": "Tivoli Marina Vilamoura",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894209",
+      "6896720"
+    ],
+    "channels": {
+      "6894209": "instagram",
+      "6896720": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0124",
+    "name": "Tivoli Mofarrej - São Paulo",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4779162"
+    ],
+    "channels": {
+      "4779162": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0125",
+    "name": "Tivoli Mofarrej São Paulo",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "4779172"
+    ],
+    "channels": {
+      "4779172": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0196",
+    "name": "Tivoli Oriente",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894205",
+      "6896715"
+    ],
+    "channels": {
+      "6894205": "instagram",
+      "6896715": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0199",
+    "name": "Tivoli Palazzo Gaddi Firenze",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894216",
+      "6896667"
+    ],
+    "channels": {
+      "6894216": "instagram",
+      "6896667": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0200",
+    "name": "Tivoli Portopiccolo Sistiana Resort",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6894219"
+    ],
+    "channels": {
+      "6894219": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0257",
+    "name": "Tivoli Portopiccolo Sistiana Resort & Spa",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6896713"
+    ],
+    "channels": {
+      "6896713": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0248",
+    "name": "Tivoli President Milano",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "6896646"
+    ],
+    "channels": {
+      "6896646": "facebook"
+    }
+  },
+  {
+    "hotel_id": "sprout_0392",
+    "name": "Tivoli President Milano Hotel",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7406174"
+    ],
+    "channels": {
+      "7406174": "instagram"
+    }
+  },
+  {
+    "hotel_id": "sprout_0333",
+    "name": "tivolialnajada",
+    "brand": "TV",
+    "region": "Global",
+    "country": "",
+    "profile_ids": [
+      "7215323"
+    ],
+    "channels": {
+      "7215323": "tiktok"
+    }
   }
 ]
