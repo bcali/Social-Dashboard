@@ -23,6 +23,8 @@ export function SocialDashboardPage() {
     filteredHotels,
     aggregateMetrics,
     weeklyTrends,
+    top5WeeklyTrends,
+    perHotelTrends,
     globalTop4,
     availableRegions,
     availableBrands,
@@ -84,7 +86,12 @@ export function SocialDashboardPage() {
       </ErrorBoundary>
 
       <ErrorBoundary name="Trend Chart">
-        <TrendChart weeklyTrends={weeklyTrends} />
+        <TrendChart
+          weeklyTrends={weeklyTrends}
+          top5WeeklyTrends={top5WeeklyTrends}
+          hotels={filteredHotels}
+          perHotelTrends={perHotelTrends}
+        />
       </ErrorBoundary>
 
       <ErrorBoundary name="Rankings">
