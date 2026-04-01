@@ -1,0 +1,92 @@
+[
+  {
+    "hotel_id": "minor_001",
+    "name": "Anantara Seminyak Bali Resort",
+    "brand": "AN",
+    "region": "AMEA",
+    "country": "ID",
+    "profile_ids": ["PENDING_FB_001", "PENDING_IG_001"],
+    "channels": { "PENDING_FB_001": "facebook", "PENDING_IG_001": "instagram" }
+  },
+  {
+    "hotel_id": "minor_002",
+    "name": "Anantara Siam Bangkok Hotel",
+    "brand": "AN",
+    "region": "AMEA",
+    "country": "TH",
+    "profile_ids": ["PENDING_FB_002", "PENDING_IG_002"],
+    "channels": { "PENDING_FB_002": "facebook", "PENDING_IG_002": "instagram" }
+  },
+  {
+    "hotel_id": "minor_003",
+    "name": "Avani+ Riverside Bangkok Hotel",
+    "brand": "AV",
+    "region": "AMEA",
+    "country": "TH",
+    "profile_ids": ["PENDING_FB_003", "PENDING_IG_003"],
+    "channels": { "PENDING_FB_003": "facebook", "PENDING_IG_003": "instagram" }
+  },
+  {
+    "hotel_id": "minor_004",
+    "name": "NH Collection Barbizon Palace",
+    "brand": "NH",
+    "region": "Europe",
+    "country": "NL",
+    "profile_ids": ["PENDING_FB_004", "PENDING_IG_004"],
+    "channels": { "PENDING_FB_004": "facebook", "PENDING_IG_004": "instagram" }
+  },
+  {
+    "hotel_id": "minor_005",
+    "name": "NH Collection Grand Hotel Krasnapolsky",
+    "brand": "NH",
+    "region": "Europe",
+    "country": "NL",
+    "profile_ids": ["PENDING_FB_005", "PENDING_IG_005"],
+    "channels": { "PENDING_FB_005": "facebook", "PENDING_IG_005": "instagram" }
+  },
+  {
+    "hotel_id": "minor_006",
+    "name": "Anantara Villa Padierna Palace",
+    "brand": "AN",
+    "region": "Europe",
+    "country": "ES",
+    "profile_ids": ["PENDING_FB_006", "PENDING_IG_006"],
+    "channels": { "PENDING_FB_006": "facebook", "PENDING_IG_006": "instagram" }
+  },
+  {
+    "hotel_id": "minor_007",
+    "name": "Anantara The Palm Dubai Resort",
+    "brand": "AN",
+    "region": "MEA",
+    "country": "AE",
+    "profile_ids": ["PENDING_FB_007", "PENDING_IG_007"],
+    "channels": { "PENDING_FB_007": "facebook", "PENDING_IG_007": "instagram" }
+  },
+  {
+    "hotel_id": "minor_008",
+    "name": "Avani Deira Dubai Hotel",
+    "brand": "AV",
+    "region": "MEA",
+    "country": "AE",
+    "profile_ids": ["PENDING_FB_008", "PENDING_IG_008"],
+    "channels": { "PENDING_FB_008": "facebook", "PENDING_IG_008": "instagram" }
+  },
+  {
+    "hotel_id": "minor_009",
+    "name": "Anantara Al Jabal Al Akhdar Resort",
+    "brand": "AN",
+    "region": "MEA",
+    "country": "OM",
+    "profile_ids": ["PENDING_FB_009", "PENDING_IG_009"],
+    "channels": { "PENDING_FB_009": "facebook", "PENDING_IG_009": "instagram" }
+  },
+  {
+    "hotel_id": "minor_010",
+    "name": "Tivoli Avenida Liberdade Lisboa",
+    "brand": "NH",
+    "region": "Europe",
+    "country": "PT",
+    "profile_ids": ["PENDING_FB_010", "PENDING_IG_010"],
+    "channels": { "PENDING_FB_010": "facebook", "PENDING_IG_010": "instagram" }
+  }
+]
