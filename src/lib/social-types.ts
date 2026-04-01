@@ -54,3 +54,35 @@ export interface GlobalTop4Baseline {
   follower_growth: number;
   hotels: string[];
 }
+
+/* ── Sprout API / Live-mode types ── */
+
+/** Maps Sprout profile IDs to hotel metadata. Loaded from data/hotels.json. */
+export interface HotelDirectoryEntry {
+  hotel_id: string;
+  name: string;
+  brand: string;
+  region: string;
+  country: string;
+  profile_ids: string[];
+  /** Maps each profile_id to its channel type */
+  channels: Record<string, "facebook" | "instagram" | "tiktok">;
+}
+
+/** A single row from the Sprout /reporting endpoint (one per profile). */
+export interface SproutReportingRow {
+  profile_id: string;
+  impressions: number;
+  engagements: number;
+  engagement_rate_by_impressions_percentage: number;
+  net_follower_growth: number;
+  video_views: number;
+  messages_sent: number;
+}
+
+/** Response from the sprout-proxy /health endpoint. */
+export interface SproutHealthResponse {
+  ok: boolean;
+  worker: string;
+  has_token: boolean;
+}
