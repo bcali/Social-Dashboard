@@ -1,10 +1,12 @@
 import { useMemo } from "react";
 import { useFetchJson } from "./useFetchJson";
+import { useSproutLive } from "./useSproutLive";
 import type { HotelEntry, AggregateMetrics, WeeklySnapshot, GlobalTop4Baseline } from "@/lib/social-types";
 
 interface SproutFilters {
   region?: string | null;
   brand?: string | null;
+  dateRange?: { start: string | null; end: string | null };
 }
 
 function aggregateHotels(hotels: HotelEntry[]): AggregateMetrics {
@@ -87,7 +89,20 @@ function aggregateWeeklyTrends(hotels: HotelEntry[]): WeeklySnapshot[] {
 }
 
 export function useSproutData(filters: SproutFilters = {}) {
-  const { data: hotels, loading, error } = useFetchJson<HotelEntry[]>("data/sprout-mock.json");
+  const proxyUrl = import.meta.env.VITE_SPROUT_PROXY_URL as string | undefined;
+  const dateRange = filters.dateRange ?? { start: null, end: null };
+
+  // Live mode — no-ops internally when proxyUrl is falsy
+  const live = useSproutLive(proxyUrl, dateRange);
+
+  // Mock mode — always loaded as fallback
+  const mock = useFetchJson<HotelEntry[]>("data/sprout-mock.json");
+
+  // Source selection: live if available, else mock
+  const isLive = Boolean(proxyUrl) && live.isLive && live.data !== null;
+  const hotels = isLive ? live.data : mock.data;
+  const loading = proxyUrl ? live.loading || mock.loading : mock.loading;
+  const error = proxyUrl && live.error && !live.data ? live.error : mock.error;
 
   const filteredHotels = useMemo(() => {
     if (!hotels) return [];
@@ -129,5 +144,6 @@ export function useSproutData(filters: SproutFilters = {}) {
     availableBrands,
     loading,
     error,
+    isLive,
   };
 }
