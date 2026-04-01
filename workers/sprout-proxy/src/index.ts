@@ -5,6 +5,16 @@ interface Env {
 }
 
 const SPROUT_API_BASE = "https://api.sproutsocial.com/v1";
+const EDGE_CACHE_TTL = 3600; // 1 hour
+
+/** Hash a string into a short hex key for cache lookups. */
+async function hashBody(body: string): Promise<string> {
+  const encoded = new TextEncoder().encode(body);
+  const buf = await crypto.subtle.digest("SHA-256", encoded);
+  return Array.from(new Uint8Array(buf).slice(0, 8))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+}
 
 function corsHeaders(origin: string, allowed: string): Record<string, string> {
   const isAllowed = origin === allowed || origin.startsWith("http://localhost:");
@@ -101,16 +111,33 @@ export default {
     // POST /reporting — aggregate metrics per profile for a date range
     // Body: { start_date: string, end_date: string, profile_ids?: string[], metrics?: string[] }
     // Translates to Sprout filter DSL and POSTs to /analytics/profiles
-    // Cached 1 hour
+    // Cached 1 hour at edge via Cloudflare Cache API
     if (request.method === "POST" && url.pathname === "/reporting") {
       try {
-        const body = (await request.json()) as Record<string, unknown>;
+        const rawBody = await request.text();
+        const body = JSON.parse(rawBody) as Record<string, unknown>;
         if (!body.start_date || !body.end_date) {
           return Response.json(
             { error: "Missing required fields: start_date, end_date" },
             { status: 400, headers: cors },
           );
         }
+
+        // Check edge cache (keyed by body hash)
+        const bodyHash = await hashBody(rawBody);
+        const cacheUrl = new URL(url.toString());
+        cacheUrl.searchParams.set("_h", bodyHash);
+        const cacheKey = new Request(cacheUrl.toString(), { method: "GET" });
+        const edgeCache = caches.default;
+        const cachedRes = await edgeCache.match(cacheKey);
+        if (cachedRes) {
+          const headers = new Headers(cachedRes.headers);
+          // Re-apply CORS for this origin
+          for (const [k, v] of Object.entries(cors)) headers.set(k, v);
+          headers.set("X-Cache", "HIT");
+          return new Response(cachedRes.body, { status: 200, headers });
+        }
+
         const sproutBody = buildReportingBody(body as {
           start_date: string;
           end_date: string;
@@ -129,10 +156,19 @@ export default {
             { status: sproutRes.status, headers: cors },
           );
         }
-        return new Response(data, {
+
+        // Store in edge cache
+        const response = new Response(data, {
           status: 200,
-          headers: { ...cors, "Content-Type": "application/json", "Cache-Control": "public, max-age=3600" },
+          headers: { "Content-Type": "application/json", "Cache-Control": `public, max-age=${EDGE_CACHE_TTL}` },
         });
+        await edgeCache.put(cacheKey, response.clone());
+
+        // Return with CORS + cache miss header
+        const finalHeaders = new Headers(response.headers);
+        for (const [k, v] of Object.entries(cors)) finalHeaders.set(k, v);
+        finalHeaders.set("X-Cache", "MISS");
+        return new Response(data, { status: 200, headers: finalHeaders });
       } catch (err) {
         return Response.json({ error: "Proxy error", detail: (err as Error).message }, { status: 500, headers: cors });
       }
