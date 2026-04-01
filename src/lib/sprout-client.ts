@@ -6,6 +6,30 @@ import type {
 } from "./social-types";
 import { getCached, setCache, buildCacheKey } from "./sprout-cache";
 
+/** Simple concurrency limiter to avoid overwhelming the Sprout API. */
+const MAX_CONCURRENT = 10;
+let inFlight = 0;
+const queue: Array<() => void> = [];
+
+function acquireSlot(): Promise<void> {
+  if (inFlight < MAX_CONCURRENT) {
+    inFlight++;
+    return Promise.resolve();
+  }
+  return new Promise((resolve) =>
+    queue.push(() => {
+      inFlight++;
+      resolve();
+    }),
+  );
+}
+
+function releaseSlot(): void {
+  inFlight--;
+  const next = queue.shift();
+  if (next) next();
+}
+
 export async function checkHealth(proxyUrl: string, signal?: AbortSignal): Promise<SproutHealthResponse> {
   const res = await fetch(`${proxyUrl}/health`, { signal });
   if (!res.ok) throw new Error(`Health check failed: ${res.status}`);
@@ -59,24 +83,29 @@ async function fetchReportingBatch(
   const cached = getCached(cacheKey);
   if (cached) return cached;
 
-  const body = { start_date: startDate, end_date: endDate, profile_ids: profileIds };
+  await acquireSlot();
+  try {
+    const body = { start_date: startDate, end_date: endDate, profile_ids: profileIds };
 
-  const res = await fetch(`${proxyUrl}/reporting`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(body),
-    signal,
-  });
+    const res = await fetch(`${proxyUrl}/reporting`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+      signal,
+    });
 
-  if (!res.ok) {
-    const detail = await res.text().catch(() => "");
-    throw new Error(`Reporting API error ${res.status}: ${detail}`);
+    if (!res.ok) {
+      const detail = await res.text().catch(() => "");
+      throw new Error(`Reporting API error ${res.status}: ${detail}`);
+    }
+
+    const json = (await res.json()) as SproutAnalyticsResponse;
+    const rows = normalizeDailyRows(json.data);
+    setCache(cacheKey, rows);
+    return rows;
+  } finally {
+    releaseSlot();
   }
-
-  const json = (await res.json()) as SproutAnalyticsResponse;
-  const rows = normalizeDailyRows(json.data);
-  setCache(cacheKey, rows);
-  return rows;
 }
 
 /**
