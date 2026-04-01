@@ -1,81 +1,43 @@
-# Minor Hotels Dashboard Starter
+# Social Media Performance Dashboard
 
-A batteries-included boilerplate for quickly bootstrapping branded dashboard projects. Comes with a sidebar layout, KPI cards, filters, sortable data table, and the Minor Hotels design system.
+Automated social media performance reporting for Minor Hotels' 580+ properties. Pulls data from Sprout Social API and ranks properties by engagement rate, impressions, and follower growth across Facebook, Instagram, and TikTok.
+
+**Replaces**: Manual CSV exports, hand-calculated rankings, spreadsheet-based reporting
 
 ## Quick Start
 
 ```bash
-# 1. Clone or use as GitHub template
-gh repo create my-dashboard --template bcali/-web-starter --private --clone
-cd my-dashboard
-
-# 2. Run the bootstrap script
-bash bootstrap.sh
-
-# 3. Install and dev
 npm install
 npm run dev
 ```
 
-## What's Included
+The dashboard loads mock data from `data/sprout-mock.json` in development. To connect live data, deploy the `sprout-proxy` Cloudflare Worker and set the `VITE_SPROUT_PROXY_URL` environment variable.
 
-### Stack
+## Dashboard Sections
+
+1. **KPI Scorecard** — Impressions, Engagements, Engagement Rate %, Video Views, Follower Growth
+2. **Performance Trends** — Weekly line chart with metric toggle
+3. **Property Rankings** — Sortable table with pinned Global Top 4 baseline row
+4. **Content Performance** — Top posts by engagement (coming soon)
+5. **Activity & Discipline** — Posting consistency diagnostics
+6. **AI Insights** — Claude-generated performance insights (coming soon)
+
+## Stack
+
 - React 19 + Vite 7 + TypeScript 5.8 (strict)
-- Tailwind CSS 4 + Radix UI primitives
-- Chart.js + Sonner toasts
+- Tailwind CSS 4 + Minor Hotels design system
+- Chart.js + react-chartjs-2
+- Radix UI primitives
 - Vitest + Testing Library
-- ESLint + Biome (formatting)
+- ESLint + Biome
 
-### Dashboard Skeleton
-- **Layout**: Sidebar nav + header + scrollable main area
-- **KPI Cards**: Config-driven metrics with sparklines, status zones, trends
-- **Filter Bar**: Date range presets, toggle groups, apply/reset
-- **Data Table**: Sortable columns, configurable renderers
+## Cloudflare Workers
 
-### Theme System
-Four built-in themes — swap by changing one CSS import:
-
-| Theme | Description |
-|-------|-------------|
-| `minor-hotels` | Minor Hotels brand (warm white, navy, custom fonts) — **default** |
-| `clean-light` | Professional blue/gray on white |
-| `neutral-dark` | Muted slate/emerald on dark |
-| `tron-dark` | Neon cyan/orange on black |
-
-All themes use the same CSS variable names (`--color-primary`, `--color-success`, etc.) so components adapt automatically.
-
-### UI Components (`src/components/ui/`)
-14 components: Card, Badge, Button, Value, Input, DateInput, Select, Checkbox, Overlay, Drawer, Accordion, Sparkline, ScrollArea, ErrorBoundary
-
-### Cloudflare Workers
-| Worker | Purpose |
-|--------|---------|
-| `gamma-proxy` | Proxies requests to Gamma API for AI presentation generation |
-| `github-proxy` | Proxies GitHub API for inline editing from the dashboard |
-
-### CI/CD
-- **GitHub Pages**: Push to main → lint → test → build → deploy
-- **Vercel**: Connect repo, auto-deploys on push
-- **PR checks**: Format, lint, test, build (blocks merge on failure)
-
-## Customization
-
-### Swap your data
-Replace `data/kpis.json` and `data/records.json` with your domain data. KPI cards auto-adapt to the targets you define. Table columns are configured in `src/pages/DashboardPage.tsx`.
-
-### Add views
-1. Create a new page in `src/pages/`
-2. Add a nav item to the `navItems` array in `App.tsx`
-3. Add a conditional render in the Layout children
-
-### Change theme
-Edit `src/index.css` line 2:
-```css
-@import "./themes/clean-light.css";  /* or minor-hotels, neutral-dark, tron-dark */
-```
-
-### Add a custom theme
-Create `src/themes/my-theme.css` with the same CSS variable names as existing themes, then import it.
+| Worker | Purpose | Status |
+|--------|---------|--------|
+| `sprout-proxy` | Proxies Sprout Social API | Built |
+| `gamma-proxy` | Proxies Gamma API for presentation export | Needs API key |
+| `github-proxy` | Proxies GitHub API for inline editing | Built |
 
 ## Commands
 
@@ -86,7 +48,6 @@ npm run lint         # ESLint
 npm test             # Run tests
 npm run format       # Format with Biome
 npm run format:check # Check formatting
-npm run preview      # Preview production build
 ```
 
 ## Secrets
@@ -94,14 +55,23 @@ npm run preview      # Preview production build
 ### GitHub Secrets (for Actions)
 | Secret | Purpose |
 |--------|---------|
+| `VITE_SPROUT_PROXY_URL` | Your deployed sprout-proxy Worker URL |
 | `VITE_GAMMA_PROXY_URL` | Your deployed gamma-proxy Worker URL |
 | `VITE_GITHUB_PROXY_URL` | Your deployed github-proxy Worker URL |
 
 ### Cloudflare Worker Secrets
 ```bash
+cd workers/sprout-proxy
+npx wrangler secret put SPROUT_BEARER_TOKEN
+npx wrangler secret put SPROUT_CUSTOMER_ID
+
 cd workers/gamma-proxy
 npx wrangler secret put GAMMA_API_KEY
 
 cd workers/github-proxy
 npx wrangler secret put GITHUB_PAT
 ```
+
+## PRD
+
+Full product requirements: [docs/PRD-social-dashboard-v1.md](docs/PRD-social-dashboard-v1.md)
