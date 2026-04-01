@@ -5,6 +5,8 @@ import { SocialFilterBar } from "@/components/dashboard/SocialFilterBar";
 import { PropertyRankingTable } from "@/components/dashboard/PropertyRankingTable";
 import { TrendChart } from "@/components/dashboard/TrendChart";
 import { ActivityGrid } from "@/components/dashboard/ActivityGrid";
+import { TopPostsTable } from "@/components/dashboard/TopPostsTable";
+import { InsightSummary } from "@/components/dashboard/InsightSummary";
 import { useSproutData } from "@/hooks/useSproutData";
 
 export function SocialDashboardPage() {
@@ -78,6 +80,14 @@ export function SocialDashboardPage() {
 
       <ErrorBoundary name="Activity">
         <ActivityGrid metrics={aggregateMetrics} weeklyTrends={weeklyTrends} />
+      </ErrorBoundary>
+
+      <ErrorBoundary name="Top Content">
+        <TopPostsTable />
+      </ErrorBoundary>
+
+      <ErrorBoundary name="Insights">
+        <InsightSummary />
       </ErrorBoundary>
     </div>
   );
