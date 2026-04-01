@@ -1,0 +1,5 @@
+{
+  "engagement_rate": { "good": 3.0, "warning": 1.5 },
+  "follower_growth_pct": { "good": 2.0, "warning": 0.5 },
+  "impressions_wow_growth": { "good": 5.0, "warning": 0 }
+}
