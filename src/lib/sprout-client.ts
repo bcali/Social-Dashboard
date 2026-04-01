@@ -21,11 +21,33 @@ export async function fetchProfiles(proxyUrl: string, signal?: AbortSignal): Pro
   return json.data;
 }
 
+const BATCH_SIZE = 100; // Sprout API limit per request
+
 /**
  * Fetches reporting data and normalizes Sprout's daily per-profile rows
  * into aggregated SproutReportingRow[] (one row per profile, summed across days).
+ * Automatically batches profile IDs into chunks of 100 (Sprout API limit).
  */
 export async function fetchReporting(
+  proxyUrl: string,
+  startDate: string,
+  endDate: string,
+  profileIds: string[],
+  signal?: AbortSignal,
+): Promise<SproutReportingRow[]> {
+  const chunks: string[][] = [];
+  for (let i = 0; i < profileIds.length; i += BATCH_SIZE) {
+    chunks.push(profileIds.slice(i, i + BATCH_SIZE));
+  }
+
+  const batchResults = await Promise.all(
+    chunks.map((chunk) => fetchReportingBatch(proxyUrl, startDate, endDate, chunk, signal)),
+  );
+
+  return batchResults.flat();
+}
+
+async function fetchReportingBatch(
   proxyUrl: string,
   startDate: string,
   endDate: string,
