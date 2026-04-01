@@ -74,7 +74,7 @@ export function PropertyRankingTable({ hotels, baseline }: PropertyRankingTableP
         </thead>
         <tbody>
           {baseline && (
-            <tr className="ui-glow-success">
+            <tr className="ui-glow-success [&>td]:sticky [&>td]:top-[33px] [&>td]:z-[9]">
               <td className="font-mono text-[var(--text-muted)]">—</td>
               <td>
                 <span className="font-semibold text-[var(--text-primary)]">Global Top 4 Avg</span>
