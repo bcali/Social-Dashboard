@@ -124,6 +124,22 @@ export function useSproutData(filters: SproutFilters = {}) {
 
   const globalTop4 = useMemo(() => (hotels ? computeGlobalTop4(hotels) : null), [hotels]);
 
+  const top5WeeklyTrends = useMemo(() => {
+    if (!filteredHotels.length) return [];
+    const sorted = [...filteredHotels].sort((a, b) => b.metrics.engagement_rate - a.metrics.engagement_rate);
+    return aggregateWeeklyTrends(sorted.slice(0, 5));
+  }, [filteredHotels]);
+
+  const perHotelTrends = useMemo(() => {
+    const map = new Map<string, WeeklySnapshot[]>();
+    for (const h of filteredHotels) {
+      if (h.weekly_history.length > 0) {
+        map.set(h.hotel_id, h.weekly_history);
+      }
+    }
+    return map;
+  }, [filteredHotels]);
+
   const availableRegions = useMemo(() => {
     if (!hotels) return [];
     return [...new Set(hotels.map((h) => h.region))].sort();
@@ -139,6 +155,8 @@ export function useSproutData(filters: SproutFilters = {}) {
     filteredHotels,
     aggregateMetrics,
     weeklyTrends,
+    top5WeeklyTrends,
+    perHotelTrends,
     globalTop4,
     availableRegions,
     availableBrands,
