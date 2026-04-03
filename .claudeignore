@@ -1,0 +1,28 @@
+# Secrets
+.env
+.env.*
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.vite/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE secrets
+.vscode/settings.json
+
+# Cloudflare secrets
+wrangler.toml
+.wrangler/
+
+# Git internals
+.git/
+
+# Large generated files
+package-lock.json
+tsconfig.tsbuildinfo
